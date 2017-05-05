@@ -6,7 +6,7 @@ While everyone has different tastes, there are universally accepted norms when i
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;'Beauty is really in the eye of the beholder'&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Image aesthetics assessment is an attempt to define the &lt;strong&gt;beauty&lt;/strong&gt; of an Image.
 While everyone has different tastes, there are universally accepted norms when it comes to beauty – things which everyone pretty much agrees are beautiful, like sunsets or sunrises over the mountains or the ocean.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Foo" src="https://usatunofficial.files.wordpress.com/2012/03/barns_grand_tetons.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Beautiful Image" src="https://usatunofficial.files.wordpress.com/2012/03/barns_grand_tetons.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Some of the visual feature that come handy are &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;edge distributions, &lt;/li&gt;
@@ -25,8 +25,8 @@ While everyone has different tastes, there are universally accepted norms when i
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;img alt="Foo" src="https://image.ibb.co/eVhL0k/resize_thumb_ambiance_amazing_1024.jpg"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img alt="Foo" src="https://image.ibb.co/ittcfk/resize_thumb_ambiance_bad_1024.jpg"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="Beautiful Image" src="https://image.ibb.co/eVhL0k/resize_thumb_ambiance_amazing_1024.jpg"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="low quality Image" src="https://image.ibb.co/ittcfk/resize_thumb_ambiance_bad_1024.jpg"&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -38,14 +38,14 @@ While everyone has different tastes, there are universally accepted norms when i
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;Fine Curated Content&lt;/th&gt;
+&lt;th&gt;Curated Content&lt;/th&gt;
 &lt;th&gt;User Generated Content&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;img alt="Foo" src="https://image.ibb.co/fwvb6Q/resize_thumb_Screen_Shot_2017_04_15_at_11_18_25_AM_1024.jpg"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img alt="Foo" src="https://image.ibb.co/kThTLk/resize_thumb_Screen_Shot_2017_04_15_at_11_30_00_AM_1024.jpg"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="Curated Content" src="https://image.ibb.co/fwvb6Q/resize_thumb_Screen_Shot_2017_04_15_at_11_18_25_AM_1024.jpg"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="User Generated Content" src="https://image.ibb.co/kThTLk/resize_thumb_Screen_Shot_2017_04_15_at_11_30_00_AM_1024.jpg"&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -55,7 +55,7 @@ While everyone has different tastes, there are universally accepted norms when i
 &lt;h2&gt;&lt;strong&gt;Deep learning&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;The topic needs no introduction. It’s a revolution especially in the image classification domain since the last 5 years. With “Alexnet” winning the Image-Net competition, improving error rate with a huge margin acted as spark in the field. Since then, CNN has many state of the arts on its name.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Network architecture of Alexnet.&lt;/strong&gt; &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Foo" src="https://image.ibb.co/cG4sfk/thumb_CNN_image_1024.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alexnet architecture" src="https://image.ibb.co/cG4sfk/thumb_CNN_image_1024.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;The first layer is input, where input in fed to the network. We can see there pooling operations, convolution operations finally followed by a fully connected layer 
 and final softmax layer so that we get values as the probability for each class we label.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -69,7 +69,7 @@ and final softmax layer so that we get values as the probability for each class 
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;img alt="Foo" src="https://image.ibb.co/mMhFi5/thumb_input_CNN_image_1024.jpg"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="Input Layer" src="https://image.ibb.co/mMhFi5/thumb_input_CNN_image_1024.jpg"&gt;&lt;/td&gt;
 &lt;td&gt;Input image &lt;strong&gt;re-sized to 224 * 224&lt;/strong&gt; irrespective of original image shape.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -85,8 +85,8 @@ or pad image if image dimensions are smaller, to get a fixed size input to fed t
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;img alt="Foo" src="https://www.freewebheaders.com/wordpress/wp-content/gallery/beautiful-landscape/iceland-blue-lagoon-and-snow-mountains-landscape-header.jpg"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img alt="Foo" src="http://images.mapsofindia.com/india-tour/newvolume/mapindia/india-tour/wp-content/blogs.dir/6/files/2012/09/qutub-minar-minaret.jpg"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="Mountains" src="https://www.freewebheaders.com/wordpress/wp-content/gallery/beautiful-landscape/iceland-blue-lagoon-and-snow-mountains-landscape-header.jpg"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="Qutub Minar" src="http://images.mapsofindia.com/india-tour/newvolume/mapindia/india-tour/wp-content/blogs.dir/6/files/2012/09/qutub-minar-minaret.jpg"&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -96,7 +96,7 @@ Certainly the image will &lt;strong&gt;loose all it’s original aesthetic value
 From Landscape to Squared size. All damage is done. The original image composition is lost when image is re-sized.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2&gt;&lt;strong&gt;Demystifying the Network Architecture&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="Foo" src="https://image.ibb.co/cG4sfk/thumb_CNN_image_1024.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Network Architecture" src="https://image.ibb.co/cG4sfk/thumb_CNN_image_1024.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Let’s unveil the hidden layers! So, we can see that after the input , there are few layers of &lt;strong&gt;Operations&lt;/strong&gt;. 
 The operations are either &lt;strong&gt;Max-pooling&lt;/strong&gt; or convolving with a filter i.e. &lt;strong&gt;Convolution&lt;/strong&gt;.
 So why fixed size of input is required at all then?&lt;br&gt;
@@ -107,21 +107,21 @@ Fully Connected Layers are in the network for non-linear combination of feature 
 &lt;h2&gt;&lt;strong&gt;Max Pooling&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;Max pooling are there for &lt;strong&gt;Down-sampling&lt;/strong&gt; the feature space while maintain the spatial information
 Max Pooling in action&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://image.ibb.co/jKK0GQ/cropped_max_pooling.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Max Pooling" src="https://image.ibb.co/jKK0GQ/cropped_max_pooling.gif"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2&gt;&lt;strong&gt;Spatial Pyramid Pooling&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;In spp, an image is divided into bins. Each bin is pooled in its turn. As the number of bins are fixed, 
 we always get the &lt;strong&gt;Fixed Shape Output&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Spp operation in action&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://image.ibb.co/juAki5/sppp_2_cropped.gif"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://image.ibb.co/f77y35/bin_4_spp.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Spatial Pyramid Pooling" src="https://image.ibb.co/juAki5/sppp_2_cropped.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Spatial Pyramid Pooling" src="https://image.ibb.co/f77y35/bin_4_spp.gif"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2&gt;&lt;strong&gt;Spp Network Architecture&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="" src="https://image.ibb.co/fxiPAk/network.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Spp Network Architecture" src="https://image.ibb.co/fxiPAk/network.png"&gt;&lt;/p&gt;
 &lt;p&gt;The first network is the traditional CNN , we can see the &lt;strong&gt;Max-pool layer&lt;/strong&gt; just before the fully connected layer.
 In the second architecture, the last max pooling layer is &lt;strong&gt;replaced by a Spp layer&lt;/strong&gt;. 
 With the &lt;strong&gt;Fixed Bin size (1,2,4)&lt;/strong&gt; we make sure that the fully connected layer gets the fixed shape input.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="https://camo.githubusercontent.com/9099d29d9e59248dff137dd10189e0c81d35aa56/687474703a2f2f692e696d6775722e636f6d2f5351574a566f442e706e67"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Spp Network Architecture" src="https://camo.githubusercontent.com/9099d29d9e59248dff137dd10189e0c81d35aa56/687474703a2f2f692e696d6775722e636f6d2f5351574a566f442e706e67"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2&gt;&lt;strong&gt;Training the Spp-Net&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;Training the Spp-Net on &lt;strong&gt;live-dataset&lt;/strong&gt;, very small dataset, about 1K images total, model achieved the accuracy of 75% on training data, 83% on the test data.&lt;/p&gt;
@@ -134,8 +134,8 @@ With the &lt;strong&gt;Fixed Bin size (1,2,4)&lt;/strong&gt; we make sure that t
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;img alt="Foo" src="https://image.ibb.co/m9AAi5/training_accuracy.png"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img alt="Foo" src="https://image.ibb.co/fkS1qk/training_loss.png"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="Spp-Net Accuracy" src="https://image.ibb.co/m9AAi5/training_accuracy.png"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="Spp-Net Training Loss" src="https://image.ibb.co/fkS1qk/training_loss.png"&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -158,7 +158,7 @@ With the &lt;strong&gt;Fixed Bin size (1,2,4)&lt;/strong&gt; we make sure that t
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;img alt="Foo" src="https://image.ibb.co/nqyrqk/Screen_Shot_2017_04_25_at_2_48_51_PM.png"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="Blurred Image" src="https://image.ibb.co/nqyrqk/Screen_Shot_2017_04_25_at_2_48_51_PM.png"&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
@@ -173,7 +173,7 @@ With the &lt;strong&gt;Fixed Bin size (1,2,4)&lt;/strong&gt; we make sure that t
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;img alt="Foo" src="https://image.ibb.co/fR5zbQ/blurred_0071.jpg"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img alt="Complete Image" src="https://image.ibb.co/fR5zbQ/blurred_0071.jpg"&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
