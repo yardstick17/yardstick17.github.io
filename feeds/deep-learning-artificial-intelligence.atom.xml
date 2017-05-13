@@ -33,7 +33,7 @@ While everyone has different tastes, there are universally accepted norms when i
 &lt;p&gt;The Image is of same place taken with different lightening, angle, adjusted contrast. And it is obvious that image on the left has better aesthetic attire.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Significance of Image Aesthetics&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;For a platform especially that serves media content, one of the crucial aspect is to show high quality content. With social sites and the given ‘selfie’ trend, we are generating huge amount of data in the form of either imaages or videos.
+&lt;p&gt;For a platform especially that serves media content, one of the crucial aspect is to show high quality content. With social sites and the given ‘selfie’ trend, we are generating huge amount of data in the form of either images or videos.
  Having a track on the quality will always be helpful.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -102,7 +102,7 @@ The operations are either &lt;strong&gt;Max-pooling&lt;/strong&gt; or convolving
 So why fixed size of input is required at all then?&lt;br&gt;
 It’s because of the &lt;strong&gt;Fully Connected Layer&lt;/strong&gt; just before the outputs. 
 Fully Connected Layers are in the network for non-linear combination of feature extracted before in convolution network.&lt;/p&gt;
-&lt;p&gt;Let's understanding bit by bit.&lt;/p&gt;
+&lt;p&gt;Let's understand bit by bit.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2&gt;&lt;strong&gt;Max Pooling&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;Max pooling are there for &lt;strong&gt;Down-sampling&lt;/strong&gt; the feature space while maintain the spatial information
