@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Connecting Dots - Research Paper Explained</title><link href="https://yardstick17.github.io/" rel="alternate"></link><link href="https://yardstick17.github.io/feeds/research-paper-explained.atom.xml" rel="self"></link><id>https://yardstick17.github.io/</id><updated>2017-04-01T00:00:00+05:30</updated><entry><title>Distributed Representations of Words and Phrases and their Composition</title><link href="https://yardstick17.github.io/distributed-representations-of-words-and-phrases-and-their-composition.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/distributed-representations-of-words-and-phrases-and-their-composition.html</id><summary type="html">&lt;p&gt;&lt;a href="http://web2.cs.columbia.edu/~blei/seminar/2016_discrete_data/readings/MikolovSutskeverChenCorradoDean2013.pdf"&gt;Paper Link&lt;/a&gt;
+&lt;strong&gt;Authors:&lt;/strong&gt; Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean
+&lt;strong&gt;Aim:&lt;/strong&gt;  &lt;br&gt;
+This Paper is second in the series by Mikolov et al. of &lt;a href="http://www.fit.vutbr.cz/research/groups/speech/publi/2009/mikolov_ic2009_nnlm_4.pdf"&gt;Statistical Language Models Based on Neural Networks&lt;/a&gt;
+It is an extension to the proposed Skip-gram model in terms of quality and training speed. It …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://web2.cs.columbia.edu/~blei/seminar/2016_discrete_data/readings/MikolovSutskeverChenCorradoDean2013.pdf"&gt;Paper Link&lt;/a&gt;
+&lt;strong&gt;Authors:&lt;/strong&gt; Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean
+&lt;strong&gt;Aim:&lt;/strong&gt;  &lt;br&gt;
+This Paper is second in the series by Mikolov et al. of &lt;a href="http://www.fit.vutbr.cz/research/groups/speech/publi/2009/mikolov_ic2009_nnlm_4.pdf"&gt;Statistical Language Models Based on Neural Networks&lt;/a&gt;
+It is an extension to the proposed Skip-gram model in terms of quality and training speed. It also incorporates methods for Phrase representation and explores the 
+interesting property of Skip-gram model.&lt;/p&gt;</content></entry><entry><title>Hierarchical Probabilistic Neural Network Language Model</title><link href="https://yardstick17.github.io/hierarchical-probabilistic-neural-network-language-model.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/hierarchical-probabilistic-neural-network-language-model.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.iro.umontreal.ca/~lisa/pointeurs/hierarchical-nnlm-aistats05.pdf"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Authors: &lt;span&gt; Frederic Morin, Yoshua Bengio &lt;/span&gt;&lt;/h4&gt;
+&lt;h3&gt;&lt;strong&gt;Aim&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Various neural network architecture have been used for Language modeling. With the emergence of word embeddings, these models
+have been successfully applied. However these models are quite slow in comparison to traditional n-gram models.
+To speed-up training and prediction, hierarchical the decomposition …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.iro.umontreal.ca/~lisa/pointeurs/hierarchical-nnlm-aistats05.pdf"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Authors: &lt;span&gt; Frederic Morin, Yoshua Bengio &lt;/span&gt;&lt;/h4&gt;
+&lt;h3&gt;&lt;strong&gt;Aim&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Various neural network architecture have been used for Language modeling. With the emergence of word embeddings, these models
+have been successfully applied. However these models are quite slow in comparison to traditional n-gram models.
+To speed-up training and prediction, hierarchical the decomposition of the conditional probabilities that yields a speed-up by a factor about 200.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;In n-gram model as the size of vocabulary increases, the dictionary sizes with all combinations shoots up very sharply.&lt;/p&gt;
+&lt;h3&gt;Challenges&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Traversal across all combination even if a small fraction of update is done.&lt;/li&gt;
+&lt;li&gt;Similar object should have the same probability which is not possible if knowledge free representation is used.&lt;/li&gt;
+&lt;li&gt;Long training time and huge computation is needed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;&lt;strong&gt;The objective of this paper is thus to propose a much faster variant of the neural probabilistic language model.&lt;/strong&gt;&lt;/h5&gt;</content></entry><entry><title>Learning Semantic Hierarchies viaWord Embeddings</title><link href="https://yardstick17.github.io/learning-semantic-hierarchies-viaword-embeddings.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/learning-semantic-hierarchies-viaword-embeddings.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.google.co.in/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0ahUKEwiP5oKIq_LUAhVJMo8KHSF8B3QQFgglMAA&amp;amp;url=http%3A%2F%2Fir.hit.edu.cn%2F~car%2Fpapers%2Facl14embedding.pdf&amp;amp;usg=AFQjCNF-HUqFNmAAAcqXmGMi773iWNLRVQ"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Ruiji Fu, Jiang Guo, Bing Qin, Wanxiang Che, Haifeng Wang, Ting Liu&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Aim:&lt;/strong&gt;  &lt;br&gt;
+This Paper proposes a methodology to build relationships(hierarchies) between the words. In its core, it
+ checks whether two words share a hypernym–hyponym relationship using the word embeddings.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://www.google.co.in/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0ahUKEwiP5oKIq_LUAhVJMo8KHSF8B3QQFgglMAA&amp;amp;url=http%3A%2F%2Fir.hit.edu.cn%2F~car%2Fpapers%2Facl14embedding.pdf&amp;amp;usg=AFQjCNF-HUqFNmAAAcqXmGMi773iWNLRVQ"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Ruiji Fu, Jiang Guo, Bing Qin, Wanxiang Che, Haifeng Wang, Ting Liu&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Aim:&lt;/strong&gt;  &lt;br&gt;
+This Paper proposes a methodology to build relationships(hierarchies) between the words. In its core, it
+ checks whether two words share a hypernym–hyponym relationship using the word embeddings.&lt;/p&gt;</content></entry><entry><title>Noise-Contrastive Estimation and its Generalizations</title><link href="https://yardstick17.github.io/noise-contrastive-estimation-and-its-generalizations.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/noise-contrastive-estimation-and-its-generalizations.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www2.warwick.ac.uk/fac/sci/statistics/crism/workshops/estimatingconstants/gutmann.pdf"&gt;Paper Link&lt;/a&gt;
+&lt;strong&gt;Authors:&lt;/strong&gt; Michael Gutmann
+&lt;strong&gt;Aim:&lt;/strong&gt;  &lt;br&gt;
+This Paper is second in the series by Mikolov et al. of &lt;a href="http://www.fit.vutbr.cz/research/groups/speech/publi/2009/mikolov_ic2009_nnlm_4.pdf"&gt;Statistical Language Models Based on Neural Networks&lt;/a&gt;
+It is an extension to the proposed Skip-gram model in terms of quality and training speed. It also incorporates methods for Phrase representation and explores …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www2.warwick.ac.uk/fac/sci/statistics/crism/workshops/estimatingconstants/gutmann.pdf"&gt;Paper Link&lt;/a&gt;
+&lt;strong&gt;Authors:&lt;/strong&gt; Michael Gutmann
+&lt;strong&gt;Aim:&lt;/strong&gt;  &lt;br&gt;
+This Paper is second in the series by Mikolov et al. of &lt;a href="http://www.fit.vutbr.cz/research/groups/speech/publi/2009/mikolov_ic2009_nnlm_4.pdf"&gt;Statistical Language Models Based on Neural Networks&lt;/a&gt;
+It is an extension to the proposed Skip-gram model in terms of quality and training speed. It also incorporates methods for Phrase representation and explores the 
+interesting property of Skip-gram model.
+&lt;a href="http://demo.clab.cs.cmu.edu/cdyer/nce_notes.pdf"&gt;Notes on Noise Contrastive Estimation and Negative Sampling&lt;/a&gt;&lt;/p&gt;</content></entry></feed>
