@@ -1,5 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Connecting Dots</title><link href="https://yardstick17.github.io/" rel="alternate"></link><link href="https://yardstick17.github.io/feeds/all.atom.xml" rel="self"></link><id>https://yardstick17.github.io/</id><updated>2017-05-01T00:00:00+05:30</updated><entry><title>Image Aesthetic Assessment</title><link href="https://yardstick17.github.io/image-aesthetic-assessment.html" rel="alternate"></link><published>2017-05-01T00:00:00+05:30</published><updated>2017-05-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-05-01:/image-aesthetic-assessment.html</id><summary type="html">&lt;p&gt;Image Aesthetic Assessment using Deep Learning. The defined network takes the complete image instead of fixed or re-sized input. This makes the network to learn for original image composition.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Connecting Dots</title><link href="https://yardstick17.github.io/" rel="alternate"></link><link href="https://yardstick17.github.io/feeds/all.atom.xml" rel="self"></link><id>https://yardstick17.github.io/</id><updated>2017-06-01T00:00:00+05:30</updated><entry><title>Understanding CNN (Part 2)</title><link href="https://yardstick17.github.io/understanding-cnn-part-2.html" rel="alternate"></link><published>2017-06-01T00:00:00+05:30</published><updated>2017-06-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-06-01:/understanding-cnn-part-2.html</id><summary type="html">&lt;p&gt;This is the continuation of Part-1 of this series. if you are just started in the subject please review
+the &lt;a href="http://amitkushwaha.co.in/understanding-cnn.html"&gt;Part-1&lt;/a&gt; of this series.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Training Perceptron&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Perceptron" src="../images/TalkCNN.016.jpeg"&gt;&lt;/p&gt;
+&lt;h3&gt;Dataset&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="n"&gt;X&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]])&lt;/span&gt;
+    &lt;span class="n"&gt;Y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;We …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the continuation of Part-1 of this series. if you are just started in the subject please review
+the &lt;a href="http://amitkushwaha.co.in/understanding-cnn.html"&gt;Part-1&lt;/a&gt; of this series.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Training Perceptron&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Perceptron" src="../images/TalkCNN.016.jpeg"&gt;&lt;/p&gt;
+&lt;h3&gt;Dataset&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="n"&gt;X&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]])&lt;/span&gt;
+    &lt;span class="n"&gt;Y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;We are starting with this truth-table to train our perceptron model.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;X&lt;/strong&gt;: Feature Vector of each sample&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y&lt;/strong&gt;: Label for each sample&lt;/p&gt;
+&lt;p&gt;&lt;img alt="weights-update-process-visualization" src="../images/cnn-weights-update-animation.gif"&gt;&lt;/p&gt;
+&lt;p&gt;We initialize our perceptron model with random values of weights.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;W&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rand&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;As explained in the Training Algorithm section, we aim to increase the performance at tasks in T.
+In each epoch, we make a feed-forward our perceptron to predict the desired output. When the
+predicted(calculated) is not consistent with the desired, we make an update to the weights of perceptron.
+ Updating the weights means, wither the values of W are going to be increased or decreaded.
+ This delta change is what &lt;strong&gt;&lt;em&gt;Training Algorithm&lt;/em&gt;&lt;/strong&gt; dictates in order to minimize the overall error/loss as defined.&lt;/p&gt;
+&lt;p&gt;While we train any model, we always have a loss defined over which the weights are optimized.
+A very typical training loss should appear like this.&lt;/p&gt;
+&lt;p&gt;Learning rate is the momentum we give to our training speed.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="n"&gt;eta&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;0.001&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In our case we have defined our loss as the squared error. As explained in the previous 
+session, the delta weights update formulates to this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;delta_weight&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;eta&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;true_label&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;predicted_label&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+
+&lt;span class="sd"&gt;    :param eta: Learning rate&lt;/span&gt;
+&lt;span class="sd"&gt;    :param true_label:&lt;/span&gt;
+&lt;span class="sd"&gt;    :param predicted_label:&lt;/span&gt;
+&lt;span class="sd"&gt;    :param x:&lt;/span&gt;
+&lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;lambda_param&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="n"&gt;delta_w&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;lambda_param&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;eta&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;predicted_label&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;true_label&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;delta_w&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;script src="https://gist.github.com/yardstick17/dcf240784bcdf455a534b6d4179cd9c1.js"&gt;&lt;/script&gt;
+
+&lt;p&gt;So, we have hyper-parameter to choose when we start training a model. In our case, hyper-parameters are:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="sd"&gt;eta: learning rate of the training&lt;/span&gt;
+&lt;span class="sd"&gt;lambda_param: to limit the maximum delta change in weights&lt;/span&gt;
+&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;With different learning rates we may get different loss-plots. If the learning rate is high, weights updates are
+large, which &lt;em&gt;&lt;strong&gt;may&lt;/strong&gt;&lt;/em&gt; result in faster training.&lt;/p&gt;
+&lt;p&gt;With Learning Rate,&lt;strong&gt;eta = 0.0001&lt;/strong&gt;, the training took more epochs to reach the desired minimum loss.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Training loss Graph" src="../images/training_loss_e_0.001.png"&gt;&lt;/p&gt;
+&lt;p&gt;When Learning Rate,&lt;strong&gt;eta = 0.01&lt;/strong&gt;, training speeds up almost with the factor of 10.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Training loss Graph" src="../images/training_loss_plot_e_0.01.png"&gt;&lt;/p&gt;</content></entry><entry><title>Understanding CNN</title><link href="https://yardstick17.github.io/understanding-cnn.html" rel="alternate"></link><published>2017-05-01T00:00:00+05:30</published><updated>2017-05-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-05-01:/understanding-cnn.html</id><summary type="html">&lt;p&gt;Let's start with the most basic element of Neural Network - &lt;strong&gt;Perceptron&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Perceptron&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;The elementary entity and basic form of neural network which can also learn. 
+The development owes to a biological inspiration from a Neuron. Much like Neuron, a perceptron 
+takes an input signal, process it, and stimulate a response …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Let's start with the most basic element of Neural Network - &lt;strong&gt;Perceptron&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Perceptron&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;The elementary entity and basic form of neural network which can also learn. 
+The development owes to a biological inspiration from a Neuron. Much like Neuron, a perceptron 
+takes an input signal, process it, and stimulate a response. A single perceptron can learn to discriminate linear separable problem.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Perceptron" src="../images/TalkCNN.007.jpeg"&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Representing a Perceptron&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;The more practical representation of Perceptron and its function.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Perceptron" src="../images/TalkCNN.008.jpeg"&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Feature Vector&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Machine learning tasks are usually described in terms of how the machine
+learning system should process an example. An example is a collection of features
+that have been quantitatively measured from some object or event that we want
+the machine learning system to process. We typically represent an example as a
+vector x ∈ Rn where each entry xi of the vector is another feature. For example,
+the features of an image are usually the values of the pixels in the image.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Classification&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;In this type of task, the computer program is asked to specify
+which of k categories some input belongs to. To solve this task, the learning
+algorithm is usually asked to produce a function f : Rn → {1, . . . , k}. When
+y = f (x), the model assigns an input described by vector x to a category
+identified by numeric code y. There are other variants of the classification
+task, for example, where f outputs a probability distribution over classes.
+An example of a classification task is object recognition, where the input
+is an image (usually described as a set of pixel brightness values), and the
+output is a numeric code identifying the object in the image. For example,
+the Willow Garage PR2 robot is able to act as a waiter that can recognize
+different kinds of drinks and deliver them to people on command (Goodfellow
+et al., 2010). Modern object recognition is best accomplished with
+deep learning (Krizhevsky et al., 2012; Ioffe and Szegedy, 2015). Object
+recognition is the same basic technology that allows computers to recognize
+faces (Taigman et al., 2014), which can be used to automatically tag people
+in photo collections and allow computers to interact more naturally with
+their users.&lt;/p&gt;
+&lt;p&gt;In this presentation, we are going to understand how perceptron learns actually.
+To ease the purpose of understanding, we are going to learn this naive pattern.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Training Algorithm&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;A machine learning algorithm is an algorithm that is able to learn from data. But
+what do we mean by learning? Mitchell (1997) provides the definition “A computer
+program is said to learn from experience E with respect to some class of tasks T
+and performance measure P , if its performance at tasks in T , as measured by P ,
+improves with experience E.” One can imagine a very wide variety of experiences
+E, tasks T , and performance measures P , and we do not make any attempt in this
+book to provide a formal definition of what may be used for each of these entities.
+Instead, the following sections provide intuitive descriptions and examples of the
+different kinds of tasks, performance measures and experiences that can be used
+to construct machine learning algorithms.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Perceptron" src="../images/TalkCNN.015.jpeg"&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Training Perceptron&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Taking aforementioned mathematical genius to our purview. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Perceptron" src="../images/TalkCNN.016.jpeg"&gt;&lt;/p&gt;
+&lt;h3&gt;Epoch&lt;/h3&gt;
+&lt;p&gt;An epoch is defined as a single pass through your entire training set while training a machine 
+learning model. In a single epoch, all training samples are presented to your model 
+once. So the total number of epochs in training a model gives the 
+number of cycles through the entire training datasest.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;Training Perceptron&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="weights-update-process-visualization" src="../images/cnn-weights-update-animation.gif"&gt;
+As explained in the Training Algorithm section, we aim to increase the performance at tasks in T.
+In each epoch, we make a feed-forward our perceptron to predict the desired output. When the
+predicted(calculated) is not consistent with the desired, we make an update to the weights of perceptron.
+ Updating the weights means, wither the values of W are going to be increased or decreaded.
+ This delta change is what &lt;strong&gt;&lt;em&gt;Training Algorithm&lt;/em&gt;&lt;/strong&gt; dictates in order to minimize the overall error/loss as defined.&lt;/p&gt;
+&lt;p&gt;While we train any model, we always have a loss defined over which the weights are optimized.
+A very typical training loss should appear like this.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Training loss Graph" src="../images/training_loss_e_0.001.png"&gt;&lt;/p&gt;
+&lt;p&gt;That's all for the theory, we will move to code in next session, &lt;a href="http://amitkushwaha.co.in/understanding-cnn-part-2.html"&gt;Understanding CNN - Part 2&lt;/a&gt;.&lt;/p&gt;</content></entry><entry><title>Distributed Representations of Words and Phrases and their Composition</title><link href="https://yardstick17.github.io/distributed-representations-of-words-and-phrases-and-their-composition.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/distributed-representations-of-words-and-phrases-and-their-composition.html</id><summary type="html">&lt;p&gt;&lt;a href="http://web2.cs.columbia.edu/~blei/seminar/2016_discrete_data/readings/MikolovSutskeverChenCorradoDean2013.pdf"&gt;Paper Link&lt;/a&gt;
+&lt;strong&gt;Authors:&lt;/strong&gt; Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean
+&lt;strong&gt;Aim:&lt;/strong&gt;  &lt;br&gt;
+This Paper is second in the series by Mikolov et al. of &lt;a href="http://www.fit.vutbr.cz/research/groups/speech/publi/2009/mikolov_ic2009_nnlm_4.pdf"&gt;Statistical Language Models Based on Neural Networks&lt;/a&gt;
+It is an extension to the proposed Skip-gram model in terms of quality and training speed. It …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://web2.cs.columbia.edu/~blei/seminar/2016_discrete_data/readings/MikolovSutskeverChenCorradoDean2013.pdf"&gt;Paper Link&lt;/a&gt;
+&lt;strong&gt;Authors:&lt;/strong&gt; Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean
+&lt;strong&gt;Aim:&lt;/strong&gt;  &lt;br&gt;
+This Paper is second in the series by Mikolov et al. of &lt;a href="http://www.fit.vutbr.cz/research/groups/speech/publi/2009/mikolov_ic2009_nnlm_4.pdf"&gt;Statistical Language Models Based on Neural Networks&lt;/a&gt;
+It is an extension to the proposed Skip-gram model in terms of quality and training speed. It also incorporates methods for Phrase representation and explores the 
+interesting property of Skip-gram model.&lt;/p&gt;</content></entry><entry><title>Hierarchical Probabilistic Neural Network Language Model</title><link href="https://yardstick17.github.io/hierarchical-probabilistic-neural-network-language-model.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/hierarchical-probabilistic-neural-network-language-model.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.iro.umontreal.ca/~lisa/pointeurs/hierarchical-nnlm-aistats05.pdf"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Authors: &lt;span&gt; Frederic Morin, Yoshua Bengio &lt;/span&gt;&lt;/h4&gt;
+&lt;h3&gt;&lt;strong&gt;Aim&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Various neural network architecture have been used for Language modeling. With the emergence of word embeddings, these models
+have been successfully applied. However these models are quite slow in comparison to traditional n-gram models.
+To speed-up training and prediction, hierarchical the decomposition …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.iro.umontreal.ca/~lisa/pointeurs/hierarchical-nnlm-aistats05.pdf"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Authors: &lt;span&gt; Frederic Morin, Yoshua Bengio &lt;/span&gt;&lt;/h4&gt;
+&lt;h3&gt;&lt;strong&gt;Aim&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Various neural network architecture have been used for Language modeling. With the emergence of word embeddings, these models
+have been successfully applied. However these models are quite slow in comparison to traditional n-gram models.
+To speed-up training and prediction, hierarchical the decomposition of the conditional probabilities that yields a speed-up by a factor about 200.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;In n-gram model as the size of vocabulary increases, the dictionary sizes with all combinations shoots up very sharply.&lt;/p&gt;
+&lt;h3&gt;Challenges&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Traversal across all combination even if a small fraction of update is done.&lt;/li&gt;
+&lt;li&gt;Similar object should have the same probability which is not possible if knowledge free representation is used.&lt;/li&gt;
+&lt;li&gt;Long training time and huge computation is needed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;&lt;strong&gt;The objective of this paper is thus to propose a much faster variant of the neural probabilistic language model.&lt;/strong&gt;&lt;/h5&gt;</content></entry><entry><title>Image Aesthetic Assessment</title><link href="https://yardstick17.github.io/image-aesthetic-assessment.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/image-aesthetic-assessment.html</id><summary type="html">&lt;p&gt;Image Aesthetic Assessment using Deep Learning. The defined network takes the complete image instead of fixed or re-sized input. This makes the network to learn for original image composition.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;"Beauty is really in the eye of the beholder"&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -184,35 +354,7 @@ With the &lt;strong&gt;Fixed Bin size (1,2,4)&lt;/strong&gt; we make sure that t
 &lt;li&gt;&lt;a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"&gt;Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton, ImageNet Classification with Deep Convolutional Neural Networks 2012&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://ieeexplore.ieee.org/document/7780429/"&gt;Long Mai, Hailin Jin, Feing Liu, Composition-Preserving Deep Photo Aesthetics Assessment&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;With that I would like to wrap up. Any Questions ?&lt;/p&gt;</content><category term="image quality prediction"></category><category term="spatial pyramid pooling"></category><category term="spp-net"></category><category term="deep learning"></category></entry><entry><title>Distributed Representations of Words and Phrases and their Composition</title><link href="https://yardstick17.github.io/distributed-representations-of-words-and-phrases-and-their-composition.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/distributed-representations-of-words-and-phrases-and-their-composition.html</id><summary type="html">&lt;p&gt;&lt;a href="http://web2.cs.columbia.edu/~blei/seminar/2016_discrete_data/readings/MikolovSutskeverChenCorradoDean2013.pdf"&gt;Paper Link&lt;/a&gt;
-&lt;strong&gt;Authors:&lt;/strong&gt; Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean
-&lt;strong&gt;Aim:&lt;/strong&gt;  &lt;br&gt;
-This Paper is second in the series by Mikolov et al. of &lt;a href="http://www.fit.vutbr.cz/research/groups/speech/publi/2009/mikolov_ic2009_nnlm_4.pdf"&gt;Statistical Language Models Based on Neural Networks&lt;/a&gt;
-It is an extension to the proposed Skip-gram model in terms of quality and training speed. It …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://web2.cs.columbia.edu/~blei/seminar/2016_discrete_data/readings/MikolovSutskeverChenCorradoDean2013.pdf"&gt;Paper Link&lt;/a&gt;
-&lt;strong&gt;Authors:&lt;/strong&gt; Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean
-&lt;strong&gt;Aim:&lt;/strong&gt;  &lt;br&gt;
-This Paper is second in the series by Mikolov et al. of &lt;a href="http://www.fit.vutbr.cz/research/groups/speech/publi/2009/mikolov_ic2009_nnlm_4.pdf"&gt;Statistical Language Models Based on Neural Networks&lt;/a&gt;
-It is an extension to the proposed Skip-gram model in terms of quality and training speed. It also incorporates methods for Phrase representation and explores the 
-interesting property of Skip-gram model.&lt;/p&gt;</content></entry><entry><title>Hierarchical Probabilistic Neural Network Language Model</title><link href="https://yardstick17.github.io/hierarchical-probabilistic-neural-network-language-model.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/hierarchical-probabilistic-neural-network-language-model.html</id><summary type="html">&lt;p&gt;&lt;a href="http://www.iro.umontreal.ca/~lisa/pointeurs/hierarchical-nnlm-aistats05.pdf"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;Authors: &lt;span&gt; Frederic Morin, Yoshua Bengio &lt;/span&gt;&lt;/h4&gt;
-&lt;h3&gt;&lt;strong&gt;Aim&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Various neural network architecture have been used for Language modeling. With the emergence of word embeddings, these models
-have been successfully applied. However these models are quite slow in comparison to traditional n-gram models.
-To speed-up training and prediction, hierarchical the decomposition …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://www.iro.umontreal.ca/~lisa/pointeurs/hierarchical-nnlm-aistats05.pdf"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;Authors: &lt;span&gt; Frederic Morin, Yoshua Bengio &lt;/span&gt;&lt;/h4&gt;
-&lt;h3&gt;&lt;strong&gt;Aim&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Various neural network architecture have been used for Language modeling. With the emergence of word embeddings, these models
-have been successfully applied. However these models are quite slow in comparison to traditional n-gram models.
-To speed-up training and prediction, hierarchical the decomposition of the conditional probabilities that yields a speed-up by a factor about 200.&lt;/p&gt;
-&lt;h3&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;In n-gram model as the size of vocabulary increases, the dictionary sizes with all combinations shoots up very sharply.&lt;/p&gt;
-&lt;h3&gt;Challenges&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Traversal across all combination even if a small fraction of update is done.&lt;/li&gt;
-&lt;li&gt;Similar object should have the same probability which is not possible if knowledge free representation is used.&lt;/li&gt;
-&lt;li&gt;Long training time and huge computation is needed.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5&gt;&lt;strong&gt;The objective of this paper is thus to propose a much faster variant of the neural probabilistic language model.&lt;/strong&gt;&lt;/h5&gt;</content></entry><entry><title>Language Modeling</title><link href="https://yardstick17.github.io/language-modeling.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/language-modeling.html</id><summary type="html">&lt;p&gt;Language models generally try to compute the probability of a word wtwt given its n−1n−1 previous words, i.e. p(wt|wt−1,⋯wt−n+1)p(wt|wt−1,⋯wt−n+1). &lt;/p&gt;</summary><content type="html">&lt;p&gt;Language models generally try to compute the probability of a word wtwt given its n−1n−1 previous words, i.e. p(wt|wt−1,⋯wt−n+1)p(wt|wt−1,⋯wt−n+1). &lt;/p&gt;</content></entry><entry><title>Learning Semantic Hierarchies viaWord Embeddings</title><link href="https://yardstick17.github.io/learning-semantic-hierarchies-viaword-embeddings.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/learning-semantic-hierarchies-viaword-embeddings.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.google.co.in/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0ahUKEwiP5oKIq_LUAhVJMo8KHSF8B3QQFgglMAA&amp;amp;url=http%3A%2F%2Fir.hit.edu.cn%2F~car%2Fpapers%2Facl14embedding.pdf&amp;amp;usg=AFQjCNF-HUqFNmAAAcqXmGMi773iWNLRVQ"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;With that I would like to wrap up. Any Questions ?&lt;/p&gt;</content><category term="image quality prediction"></category><category term="spatial pyramid pooling"></category><category term="spp-net"></category><category term="deep learning"></category></entry><entry><title>Language Modeling</title><link href="https://yardstick17.github.io/language-modeling.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/language-modeling.html</id><summary type="html">&lt;p&gt;Language models generally try to compute the probability of a word wtwt given its n−1n−1 previous words, i.e. p(wt|wt−1,⋯wt−n+1)p(wt|wt−1,⋯wt−n+1). &lt;/p&gt;</summary><content type="html">&lt;p&gt;Language models generally try to compute the probability of a word wtwt given its n−1n−1 previous words, i.e. p(wt|wt−1,⋯wt−n+1)p(wt|wt−1,⋯wt−n+1). &lt;/p&gt;</content></entry><entry><title>Learning Semantic Hierarchies viaWord Embeddings</title><link href="https://yardstick17.github.io/learning-semantic-hierarchies-viaword-embeddings.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/learning-semantic-hierarchies-viaword-embeddings.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.google.co.in/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0ahUKEwiP5oKIq_LUAhVJMo8KHSF8B3QQFgglMAA&amp;amp;url=http%3A%2F%2Fir.hit.edu.cn%2F~car%2Fpapers%2Facl14embedding.pdf&amp;amp;usg=AFQjCNF-HUqFNmAAAcqXmGMi773iWNLRVQ"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Ruiji Fu, Jiang Guo, Bing Qin, Wanxiang Che, Haifeng Wang, Ting Liu&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Aim:&lt;/strong&gt;  &lt;br&gt;
 This Paper proposes a methodology to build relationships(hierarchies) between the words. In its core, it
@@ -247,14 +389,6 @@ Using vector representations can overcome some of these obstacles. &lt;/p&gt;
 cost function or loss enables us to learn the model. The technique of efficiently minimizing our cost function is done using the
 well defined algorithms under the premise …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The fundamental of any Machine learning models is defining a cost function or loss function. Optimizing over data-set i.e. minimizing our
 cost function or loss enables us to learn the model. The technique of efficiently minimizing our cost function is done using the
-well defined algorithms under the premise of Optimizers.  &lt;/p&gt;</content></entry><entry><title>Understanding CNN</title><link href="https://yardstick17.github.io/understanding-cnn.html" rel="alternate"></link><published>2017-03-01T00:00:00+05:30</published><updated>2017-03-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-03-01:/understanding-cnn.html</id><summary type="html">&lt;p&gt;Let's start with the most basic element of Neural Network - &lt;strong&gt;Perceptron&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Perceptron:&lt;/strong&gt; The elementary entity and basic form of neural network which can also learn. 
-The development owes to a biological inspiration from a Neuron. Much like Neuron, a perceptron
- takes an input signal, process it, and stimulate a response …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Let's start with the most basic element of Neural Network - &lt;strong&gt;Perceptron&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Perceptron:&lt;/strong&gt; The elementary entity and basic form of neural network which can also learn. 
-The development owes to a biological inspiration from a Neuron. Much like Neuron, a perceptron
- takes an input signal, process it, and stimulate a response. A single perceptron can learn to discriminate
-  linear separable problem.
-  Let's start with training a sample truth-table.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Perceptron" src="../images/TalkCNN.007.jpeg"&gt;
-&lt;img alt="Perceptron" src="../images/TalkCNN.008.jpeg"&gt;&lt;/p&gt;</content></entry><entry><title>Testing in Python</title><link href="https://yardstick17.github.io/testing-in-python.html" rel="alternate"></link><published>2017-02-01T00:00:00+05:30</published><updated>2017-02-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-02-01:/testing-in-python.html</id><summary type="html">&lt;p&gt;I will write soon. Stay Tuned.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I will write soon. Stay Tuned.&lt;/p&gt;</content></entry><entry><title>Data Pipelining in Python: Luigi</title><link href="https://yardstick17.github.io/data-pipelining-in-python-luigi.html" rel="alternate"></link><published>2017-01-01T00:00:00+05:30</published><updated>2017-01-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-01-01:/data-pipelining-in-python-luigi.html</id><summary type="html">&lt;p&gt;I will write soon. Stay Tuned.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I will write soon. Stay Tuned.&lt;/p&gt;</content></entry><entry><title>Save and Restore Tensorflow Models</title><link href="https://yardstick17.github.io/save-and-restore-tensorflow-models.html" rel="alternate"></link><published>2017-01-01T00:00:00+05:30</published><updated>2017-01-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-01-01:/save-and-restore-tensorflow-models.html</id><summary type="html">&lt;p&gt;I will write soon. Stay Tuned.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I will write soon. Stay Tuned.&lt;/p&gt;</content></entry><entry><title>Word Embeddings Using Word2vec Trained On Tensorflow</title><link href="https://yardstick17.github.io/word-embeddings-using-word2vec-trained-on-tensorflow.html" rel="alternate"></link><published>2017-01-01T00:00:00+05:30</published><updated>2017-01-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-01-01:/word-embeddings-using-word2vec-trained-on-tensorflow.html</id><summary type="html">&lt;p&gt;I will write soon. Stay Tuned.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I will write soon. Stay Tuned.&lt;/p&gt;</content></entry></feed>
+well defined algorithms under the premise of Optimizers.  &lt;/p&gt;</content></entry><entry><title>Testing in Python</title><link href="https://yardstick17.github.io/testing-in-python.html" rel="alternate"></link><published>2017-02-01T00:00:00+05:30</published><updated>2017-02-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-02-01:/testing-in-python.html</id><summary type="html">&lt;p&gt;I will write soon. Stay Tuned.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I will write soon. Stay Tuned.&lt;/p&gt;</content></entry><entry><title>Data Pipelining in Python: Luigi</title><link href="https://yardstick17.github.io/data-pipelining-in-python-luigi.html" rel="alternate"></link><published>2017-01-01T00:00:00+05:30</published><updated>2017-01-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-01-01:/data-pipelining-in-python-luigi.html</id><summary type="html">&lt;p&gt;I will write soon. Stay Tuned.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I will write soon. Stay Tuned.&lt;/p&gt;</content></entry><entry><title>Save and Restore Tensorflow Models</title><link href="https://yardstick17.github.io/save-and-restore-tensorflow-models.html" rel="alternate"></link><published>2017-01-01T00:00:00+05:30</published><updated>2017-01-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-01-01:/save-and-restore-tensorflow-models.html</id><summary type="html">&lt;p&gt;Tensorflow is a Deep Learning Library developed by Google.
+I will write soon. Stay Tuned.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Tensorflow is a Deep Learning Library developed by Google.
+I will write soon. Stay Tuned.&lt;/p&gt;</content></entry><entry><title>Word Embeddings Using Word2vec Trained On Tensorflow</title><link href="https://yardstick17.github.io/word-embeddings-using-word2vec-trained-on-tensorflow.html" rel="alternate"></link><published>2017-01-01T00:00:00+05:30</published><updated>2017-01-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-01-01:/word-embeddings-using-word2vec-trained-on-tensorflow.html</id><summary type="html">&lt;p&gt;I will write soon. Stay Tuned.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I will write soon. Stay Tuned.&lt;/p&gt;</content></entry></feed>

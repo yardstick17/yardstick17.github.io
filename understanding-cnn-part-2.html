@@ -3,7 +3,7 @@
 <head>
             <meta charset="utf-8">
         <!-- Site Meta Data -->
-        <title>Understanding CNN</title>
+        <title>Understanding CNN (Part 2)</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="Amit Kushwaha">
@@ -30,13 +30,13 @@
         <meta name="twitter:image" content="">
 
     <meta name="twitter:creator" content="imYardstick17">
-    <meta name="twitter:url" content="https://yardstick17.github.io/understanding-cnn.html">
-    <meta name="twitter:title" content="Connecting Dots ~ Understanding CNN">
-    <meta name="twitter:description" content="Let&#39;s start with the most basic element of Neural Network - Perceptron. Perceptron The elementary entity and basic form of neural network which can also learn. The development owes to a biological inspiration from a Neuron. Much like Neuron, a perceptron takes an input signal, process it, and stimulate a response …">
+    <meta name="twitter:url" content="https://yardstick17.github.io/understanding-cnn-part-2.html">
+    <meta name="twitter:title" content="Connecting Dots ~ Understanding CNN (Part 2)">
+    <meta name="twitter:description" content="This is the continuation of Part-1 of this series. if you are just started in the subject please review the Part-1 of this series. Training Perceptron Dataset X = np.array([[0, 0, 1], [1, 1, 1], [1, 0, 1], [0, 1, 1]]) Y = np.array([0, 1, 1, 0]) We …">
 
     <!-- Facebook Meta Data -->
-    <meta property="og:title" content="Connecting Dots ~ Understanding CNN"/>
-    <meta property="og:description" content="Let&#39;s start with the most basic element of Neural Network - Perceptron. Perceptron The elementary entity and basic form of neural network which can also learn. The development owes to a biological inspiration from a Neuron. Much like Neuron, a perceptron takes an input signal, process it, and stimulate a response …"/>
+    <meta property="og:title" content="Connecting Dots ~ Understanding CNN (Part 2)"/>
+    <meta property="og:description" content="This is the continuation of Part-1 of this series. if you are just started in the subject please review the Part-1 of this series. Training Perceptron Dataset X = np.array([[0, 0, 1], [1, 1, 1], [1, 0, 1], [0, 1, 1]]) Y = np.array([0, 1, 1, 0]) We …"/>
     <meta property="og:image" content=""/>
 </head>
 
@@ -112,76 +112,72 @@
 <article>
     <section id="content">
         <article>
-            <h2 class="post_title post_detail"><a href="https://yardstick17.github.io/understanding-cnn.html" rel="bookmark"
-                                                  title="Permalink to Understanding CNN">Understanding CNN</a></h2>
+            <h2 class="post_title post_detail"><a href="https://yardstick17.github.io/understanding-cnn-part-2.html" rel="bookmark"
+                                                  title="Permalink to Understanding CNN (Part 2)">Understanding CNN (Part 2)</a></h2>
             <div class="entry-content blog-post">
-                <p>Let's start with the most basic element of Neural Network - <strong>Perceptron</strong>.</p>
-<h2><strong>Perceptron</strong></h2>
-<p>The elementary entity and basic form of neural network which can also learn. 
-The development owes to a biological inspiration from a Neuron. Much like Neuron, a perceptron 
-takes an input signal, process it, and stimulate a response. A single perceptron can learn to discriminate linear separable problem.</p>
-<p><img alt="Perceptron" src="../images/TalkCNN.007.jpeg"></p>
-<h2><strong>Representing a Perceptron</strong></h2>
-<p>The more practical representation of Perceptron and its function.</p>
-<p><img alt="Perceptron" src="../images/TalkCNN.008.jpeg"></p>
-<h2><strong>Feature Vector</strong></h2>
-<p>Machine learning tasks are usually described in terms of how the machine
-learning system should process an example. An example is a collection of features
-that have been quantitatively measured from some object or event that we want
-the machine learning system to process. We typically represent an example as a
-vector x ∈ Rn where each entry xi of the vector is another feature. For example,
-the features of an image are usually the values of the pixels in the image.</p>
-<h2><strong>Classification</strong></h2>
-<p>In this type of task, the computer program is asked to specify
-which of k categories some input belongs to. To solve this task, the learning
-algorithm is usually asked to produce a function f : Rn → {1, . . . , k}. When
-y = f (x), the model assigns an input described by vector x to a category
-identified by numeric code y. There are other variants of the classification
-task, for example, where f outputs a probability distribution over classes.
-An example of a classification task is object recognition, where the input
-is an image (usually described as a set of pixel brightness values), and the
-output is a numeric code identifying the object in the image. For example,
-the Willow Garage PR2 robot is able to act as a waiter that can recognize
-different kinds of drinks and deliver them to people on command (Goodfellow
-et al., 2010). Modern object recognition is best accomplished with
-deep learning (Krizhevsky et al., 2012; Ioffe and Szegedy, 2015). Object
-recognition is the same basic technology that allows computers to recognize
-faces (Taigman et al., 2014), which can be used to automatically tag people
-in photo collections and allow computers to interact more naturally with
-their users.</p>
-<p>In this presentation, we are going to understand how perceptron learns actually.
-To ease the purpose of understanding, we are going to learn this naive pattern.</p>
-<h2><strong>Training Algorithm</strong></h2>
-<p>A machine learning algorithm is an algorithm that is able to learn from data. But
-what do we mean by learning? Mitchell (1997) provides the definition “A computer
-program is said to learn from experience E with respect to some class of tasks T
-and performance measure P , if its performance at tasks in T , as measured by P ,
-improves with experience E.” One can imagine a very wide variety of experiences
-E, tasks T , and performance measures P , and we do not make any attempt in this
-book to provide a formal definition of what may be used for each of these entities.
-Instead, the following sections provide intuitive descriptions and examples of the
-different kinds of tasks, performance measures and experiences that can be used
-to construct machine learning algorithms.</p>
-<p><img alt="Perceptron" src="../images/TalkCNN.015.jpeg"></p>
+                <p>This is the continuation of Part-1 of this series. if you are just started in the subject please review
+the <a href="http://amitkushwaha.co.in/understanding-cnn.html">Part-1</a> of this series.</p>
 <h2><strong>Training Perceptron</strong></h2>
-<p>Taking aforementioned mathematical genius to our purview. </p>
 <p><img alt="Perceptron" src="../images/TalkCNN.016.jpeg"></p>
-<h3>Epoch</h3>
-<p>An epoch is defined as a single pass through your entire training set while training a machine 
-learning model. In a single epoch, all training samples are presented to your model 
-once. So the total number of epochs in training a model gives the 
-number of cycles through the entire training datasest.</p>
-<h2><strong>Training Perceptron</strong></h2>
-<p><img alt="weights-update-process-visualization" src="../images/cnn-weights-update-animation.gif">
-As explained in the Training Algorithm section, we aim to increase the performance at tasks in T.
+<h3>Dataset</h3>
+<div class="highlight"><pre><span></span>    <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+    <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+
+<p>We are starting with this truth-table to train our perceptron model.</p>
+<p><strong>X</strong>: Feature Vector of each sample</p>
+<p><strong>Y</strong>: Label for each sample</p>
+<p><img alt="weights-update-process-visualization" src="../images/cnn-weights-update-animation.gif"></p>
+<p>We initialize our perceptron model with random values of weights.</p>
+<div class="highlight"><pre><span></span><span class="n">W</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+
+<p>As explained in the Training Algorithm section, we aim to increase the performance at tasks in T.
 In each epoch, we make a feed-forward our perceptron to predict the desired output. When the
 predicted(calculated) is not consistent with the desired, we make an update to the weights of perceptron.
  Updating the weights means, wither the values of W are going to be increased or decreaded.
  This delta change is what <strong><em>Training Algorithm</em></strong> dictates in order to minimize the overall error/loss as defined.</p>
 <p>While we train any model, we always have a loss defined over which the weights are optimized.
 A very typical training loss should appear like this.</p>
+<p>Learning rate is the momentum we give to our training speed.</p>
+<div class="highlight"><pre><span></span>    <span class="n">eta</span> <span class="o">=</span> <span class="mf">0.001</span>
+</pre></div>
+
+
+<p>In our case we have defined our loss as the squared error. As explained in the previous 
+session, the delta weights update formulates to this:</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">delta_weight</span><span class="p">(</span><span class="n">eta</span><span class="p">,</span> <span class="n">true_label</span><span class="p">,</span> <span class="n">predicted_label</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+
+<span class="sd">    :param eta: Learning rate</span>
+<span class="sd">    :param true_label:</span>
+<span class="sd">    :param predicted_label:</span>
+<span class="sd">    :param x:</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">lambda_param</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+    <span class="n">delta_w</span> <span class="o">=</span> <span class="n">lambda_param</span> <span class="o">*</span> <span class="n">eta</span> <span class="o">*</span> <span class="p">(</span><span class="n">predicted_label</span> <span class="o">-</span> <span class="n">true_label</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span>
+    <span class="k">return</span> <span class="n">delta_w</span>
+</pre></div>
+
+
+<script src="https://gist.github.com/yardstick17/dcf240784bcdf455a534b6d4179cd9c1.js"></script>
+
+<p>So, we have hyper-parameter to choose when we start training a model. In our case, hyper-parameters are:</p>
+<div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">eta: learning rate of the training</span>
+<span class="sd">lambda_param: to limit the maximum delta change in weights</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+
+
+<p>With different learning rates we may get different loss-plots. If the learning rate is high, weights updates are
+large, which <em><strong>may</strong></em> result in faster training.</p>
+<p>With Learning Rate,<strong>eta = 0.0001</strong>, the training took more epochs to reach the desired minimum loss.</p>
 <p><img alt="Training loss Graph" src="../images/training_loss_e_0.001.png"></p>
-<p>That's all for the theory, we will move to code in next session, <a href="http://amitkushwaha.co.in/understanding-cnn-part-2.html">Understanding CNN - Part 2</a>.</p>
+<p>When Learning Rate,<strong>eta = 0.01</strong>, training speeds up almost with the factor of 10.</p>
+<p><img alt="Training loss Graph" src="../images/training_loss_plot_e_0.01.png"></p>
             </div>
             <div class="post_list">
                 <span>By </span>
@@ -189,7 +185,7 @@ A very typical training loss should appear like this.</p>
                 <span> in </span>
                 <span class="post_category"><a href="https://yardstick17.github.io/category/deep-learning.html" rel="bookmark"
                                                title="Permalink to Deep Learning">[ Deep Learning ]</a></span>
-                <span class="post_date">Mon 01 May 2017</span>
+                <span class="post_date">Thu 01 June 2017</span>
                 <div><span>Tags : </span>
                 </div>
 
@@ -197,28 +193,28 @@ A very typical training loss should appear like this.</p>
                     <span class="twitter"><a target="_blank" rel="nofollow"
                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
                                              title="Twitter"
-                                             href="https://twitter.com/share?url=https://yardstick17.github.io/understanding-cnn.html&text=Understanding CNN&via=imYardstick17"><img
+                                             href="https://twitter.com/share?url=https://yardstick17.github.io/understanding-cnn-part-2.html&text=Understanding CNN (Part 2)&via=imYardstick17"><img
                             src="https://yardstick17.github.io/theme/images/icons/twitter-s.png"></a></span>
 
                     <span class="gplus"><a target="_blank" title="Google +"
-                                           href="https://plus.google.com/share?url=https://yardstick17.github.io/understanding-cnn.html&hl=fr"
+                                           href="https://plus.google.com/share?url=https://yardstick17.github.io/understanding-cnn-part-2.html&hl=fr"
                                            rel="nofollow"
                                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
                             src="https://yardstick17.github.io/theme/images/icons/google-s.png"></a></span>
 
                     <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
                                               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
-                                              href="https://www.facebook.com/sharer.php?u=https://yardstick17.github.io/understanding-cnn.html&t=Understanding CNN"><img
+                                              href="https://www.facebook.com/sharer.php?u=https://yardstick17.github.io/understanding-cnn-part-2.html&t=Understanding CNN (Part 2)"><img
                             src="https://yardstick17.github.io/theme/images/icons/facebook-s.png"></a></span>
 
                     <a target="_blank" title="Linkedin"
-                       href="https://www.linkedin.com/shareArticle?mini=true&url=https://yardstick17.github.io/understanding-cnn.html&title=Understanding CNN"
+                       href="https://www.linkedin.com/shareArticle?mini=true&url=https://yardstick17.github.io/understanding-cnn-part-2.html&title=Understanding CNN (Part 2)"
                        rel="nofollow"
                        onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
                             src="https://yardstick17.github.io/theme/images/icons/linkedin-s.png"></a>
 
                     <span class="mail"><a
-                            href="mailto:?subject=Understanding CNN&amp;body=Viens découvrir un article à propos de [Understanding CNN] sur le site de Amit Kushwaha. https://yardstick17.github.io/understanding-cnn.html"
+                            href="mailto:?subject=Understanding CNN (Part 2)&amp;body=Viens découvrir un article à propos de [Understanding CNN (Part 2)] sur le site de Amit Kushwaha. https://yardstick17.github.io/understanding-cnn-part-2.html"
                             title="Share by Email" target="_blank"><img
                             src="https://yardstick17.github.io/theme/images/icons/mail-s.png"></a></span>
                 </div>
@@ -227,7 +223,7 @@ A very typical training loss should appear like this.</p>
                     <h2>Comments !</h2>
                     <div id="disqus_thread"></div>
                     <script type="text/javascript">
-                        var disqus_identifier = "understanding-cnn.html";
+                        var disqus_identifier = "understanding-cnn-part-2.html";
                         (function () {
                             var dsq = document.createElement('script');
                             dsq.type = 'text/javascript';
