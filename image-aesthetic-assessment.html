@@ -35,11 +35,11 @@
     <meta name="twitter:creator" content="imYardstick17">
     <meta name="twitter:url" content="https://yardstick17.github.io/image-aesthetic-assessment.html">
     <meta name="twitter:title" content="Connecting Dots ~ Image Aesthetic Assessment">
-    <meta name="twitter:description" content="Image Aesthetic Assessment using Deep Learning. The defined network takes the complete image instead of fixed or re-sized input. This makes the network to learn for original image composition.">
+    <meta name="twitter:description" content="Image Aesthetic Assessment using Deep Learning. The defined network takes the complete image instead of fixed or re-sized input. This makes the network to learn about original image composition.">
 
     <!-- Facebook Meta Data -->
     <meta property="og:title" content="Connecting Dots ~ Image Aesthetic Assessment"/>
-    <meta property="og:description" content="Image Aesthetic Assessment using Deep Learning. The defined network takes the complete image instead of fixed or re-sized input. This makes the network to learn for original image composition."/>
+    <meta property="og:description" content="Image Aesthetic Assessment using Deep Learning. The defined network takes the complete image instead of fixed or re-sized input. This makes the network to learn about original image composition."/>
     <meta property="og:image" content=""/>
 </head>
 
@@ -140,11 +140,11 @@
                 <p><strong><em>"Beauty is really in the eye of the beholder"</em></strong></p>
 <p>Image aesthetics assessment is an attempt to define the <strong>beauty</strong> of an Image.
 While everyone has different tastes, there are universally accepted norms when it comes to beauty – things which everyone pretty much agrees are beautiful, like sunsets or sunrises over the mountains or the ocean.</p>
-<p>Some of the visual feature that come handy are </p>
+<p>Some of the visual features that come handy are </p>
 <ul>
 <li>edge distributions, </li>
 <li>color histogram, </li>
-<li>Some photographic rules like rue of thirds also determines the beauty of an image.</li>
+<li>Some photographic rules like rule of thirds also determines the beauty of an image.</li>
 </ul>
 <p>Defining image quality with visual features like other manually curated features are limited in the scope.</p>
 <p>The two photographer's story.</p>
@@ -162,9 +162,9 @@ While everyone has different tastes, there are universally accepted norms when i
 </tr>
 </tbody>
 </table>
-<p>The Image is of same place taken with different lightening, angle, adjusted contrast. And it is obvious that image on the left has better aesthetic attire.</p>
+<p>The Image is of the same place taken with different lightning, angle, adjusted contrast. And it is obvious that image on the left has better aesthetic attire.</p>
 <p><strong>Significance of Image Aesthetics</strong></p>
-<p>For a platform especially that serves media content, one of the crucial aspect is to show high quality content. With social sites and the given ‘selfie’ trend, we are generating huge amount of data in the form of either images or videos.
+<p>For a platform especially that serves media content, one of the crucial aspects is to show high-quality content. With social sites and the given ‘selfie’ trend, we are generating a huge amount of data in the form of either images or videos.
  Having a track on the quality will always be helpful.</p>
 <table>
 <thead>
@@ -182,10 +182,10 @@ While everyone has different tastes, there are universally accepted norms when i
 </table>
 <h2><strong>Can we model such Human Perception?</strong></h2>
 <h2><strong>Deep learning</strong></h2>
-<p>The topic needs no introduction. It’s a revolution especially in the image classification domain since the last 5 years. With “Alexnet” winning the Image-Net competition, improving error rate with a huge margin acted as spark in the field. Since then, CNN has many state of the arts on its name.</p>
+<p>The topic needs no introduction. It’s a revolution especially in the image classification domain since the last 5 years. With “Alexnet” winning the Image-Net competition, improving error rate with a huge margin acted as a spark in the field. Since then, CNN has many state of the arts on its name.</p>
 <p><strong>Network architecture of Alexnet.</strong> </p>
 <p><img alt="Alexnet architecture" src="./../images/thumb_CNN_image_1024.jpg"></p>
-<p>The first layer is input, where input in fed to the network. We can see there pooling operations, convolution operations finally followed by a fully connected layer 
+<p>The first layer is input, where input is fed to the network. We can see their pooling operations, convolution operations finally followed by a fully connected layer 
 and final softmax layer so that we get values as the probability for each class we label.</p>
 <h2><strong>Fixed size input constraint</strong></h2>
 <table>
@@ -203,7 +203,7 @@ and final softmax layer so that we get values as the probability for each class 
 </tbody>
 </table>
 <p>We always resize the input feature vector. If the image is larger, image is cropped 
-or pad image if image dimensions are smaller, to get a fixed size input to fed the network</p>
+or pad image if image dimensions are smaller, to get a fixed size input to feed the network</p>
 <table>
 <thead>
 <tr>
@@ -220,34 +220,34 @@ or pad image if image dimensions are smaller, to get a fixed size input to fed t
 </table>
 <p>The above two images are <strong>beautiful in their original aspect ratio.</strong> 
 What happens if we re-size the image to a fixed size of 224 * 224? 
-Certainly the image will <strong>loose all it’s original aesthetic value!</strong> 
-From Landscape to Squared size. All damage is done. The original image composition is lost when image is re-sized.</p>
+Certainly, the image will <strong>loose all it’s original aesthetic value!</strong> 
+From Landscape to Squared size. All damage is done. The original image composition is lost when an image is re-sized.</p>
 <h2><strong>Demystifying the Network Architecture</strong></h2>
 <p><img alt="Network Architecture" src="./../images/thumb_CNN_image_1024.jpg"></p>
-<p>Let’s unveil the hidden layers! So, we can see that after the input , there are few layers of <strong>Operations</strong>. 
+<p>Let’s unveil the hidden layers! So, we can see that after the input, there are few layers of <strong>Operations</strong>. 
 The operations are either <strong>Max-pooling</strong> or convolving with a filter i.e. <strong>Convolution</strong>.
-So why fixed size of input is required at all then?<br>
+So why the fixed size of input is required at all then?<br>
 It’s because of the <strong>Fully Connected Layer</strong> just before the outputs. 
-Fully Connected Layers are in the network for non-linear combination of feature extracted before in convolution network.</p>
+Fully Connected Layers are in the network for the non-linear combination of feature extracted before in convolution network.</p>
 <p>Let's understand bit by bit.</p>
 <h2><strong>Max Pooling</strong></h2>
-<p>Max pooling are there for <strong>Down-sampling</strong> the feature space while maintain the spatial information
+<p>Max pooling are there for <strong>Down-sampling</strong> the feature space while maintaining the spatial information
 Max Pooling in action</p>
 <p><img alt="Max Pooling" src="./../images/cropped_max_pooling.gif"></p>
 <h2><strong>Spatial Pyramid Pooling</strong></h2>
-<p>In spp, an image is divided into bins. Each bin is pooled in its turn. As the number of bins are fixed, 
+<p>In spp, an image is divided into bins. Each bin is pooled in its turn. As the number of bins is fixed, 
 we always get the <strong>Fixed Shape Output</strong>.</p>
 <p>Spp operation in action</p>
 <p><img alt="Spatial Pyramid Pooling" src="./../images/sppp_2_cropped.gif"></p>
 <p><img alt="Spatial Pyramid Pooling" src="./../images/bin_4_spp.gif"></p>
 <h2><strong>Spp Network Architecture</strong></h2>
 <p><img alt="Spp Network Architecture" src="./../images/network.png"></p>
-<p>The first network is the traditional CNN , we can see the <strong>Max-pool layer</strong> just before the fully connected layer.
+<p>The first network is the traditional CNN, we can see the <strong>Max-pool layer</strong> just before the fully connected layer.
 In the second architecture, the last max pooling layer is <strong>replaced by a Spp layer</strong>. 
 With the <strong>Fixed Bin size (1,2,4)</strong> we make sure that the fully connected layer gets the fixed shape input.</p>
 <p><img alt="Spp Network Architecture" src="./../images/687474703a2f2f692e696d6775722e636f6d2f5351574a566f442e706e67.png"></p>
 <h2><strong>Training the Spp-Net</strong></h2>
-<p>Training the Spp-Net on <strong>live-dataset</strong>, very small dataset, about 1K images total, model achieved the accuracy of 75% on training data, 83% on the test data.</p>
+<p>Training the Spp-Net on <strong>live-dataset</strong>, very small dataset, about 1K images total, model achieved the accuracy of 75% on training data, 83% of the test data.</p>
 <table>
 <thead>
 <tr>
@@ -266,10 +266,10 @@ With the <strong>Fixed Bin size (1,2,4)</strong> we make sure that the fully con
 <p><strong>With Spp in Network</strong>  </p>
 <ul>
 <li>Model learns the scale invariant feature like SIFT(traditional image processing algorithm).</li>
-<li>One of the challenge in text classification with Deep learning is the fixed size feature vector representation of sentence.</li>
+<li>One of the challenges in text classification with Deep learning is the fixed size feature vector representation of the sentence.</li>
 </ul>
 <h2><strong>Interesting Results</strong></h2>
-<p>After training model, I experimented for few results. These are the most interesting and promising results I found.</p>
+<p>After training model, I experimented with few results. These are the most interesting and promising results I found.</p>
 <table>
 <thead>
 <tr>
@@ -284,7 +284,7 @@ With the <strong>Fixed Bin size (1,2,4)</strong> we make sure that the fully con
 </tr>
 </tbody>
 </table>
-<p>I recently came across this <a href="https://philliphaumesserphotography.com">Photographer</a> experience from being a amateur to professional.<br>
+<p>I recently came across this <a href="https://philliphaumesserphotography.com">Photographer</a> experience from being an amateur to professional.<br>
 He proved what difference a change in perspective can make. So, I decided to make my trained model judge for his efficacy.</p>
 <table>
 <thead>
@@ -307,7 +307,7 @@ He proved what difference a change in perspective can make. So, I decided to mak
 <li><a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf">Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton, ImageNet Classification with Deep Convolutional Neural Networks 2012</a></li>
 <li><a href="https://ieeexplore.ieee.org/document/7780429/">Long Mai, Hailin Jin, Feing Liu, Composition-Preserving Deep Photo Aesthetics Assessment</a></li>
 </ul>
-<p>With that I would like to wrap up. Any Questions ?</p>
+<p>With that, I would like to wrap up. Any Questions?</p>
             </div>
 
             <div class="post_list">

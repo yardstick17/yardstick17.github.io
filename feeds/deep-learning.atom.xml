@@ -141,14 +141,14 @@ predicted(calculated) is not consistent with the desired, we make an update to t
 &lt;p&gt;While we train any model, we always have a loss defined over which the weights are optimized.
 A very typical training loss should appear like this.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Training loss Graph" src="../images/training_loss_e_0.001.png"&gt;&lt;/p&gt;
-&lt;p&gt;That's all for the theory, we will move to code in next session, &lt;a href="http://amitkushwaha.co.in/understanding-cnn-part-2.html"&gt;Understanding CNN - Part 2&lt;/a&gt;.&lt;/p&gt;</content></entry><entry><title>Image Aesthetic Assessment</title><link href="https://yardstick17.github.io/image-aesthetic-assessment.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/image-aesthetic-assessment.html</id><summary type="html">&lt;p&gt;Image Aesthetic Assessment using Deep Learning. The defined network takes the complete image instead of fixed or re-sized input. This makes the network to learn for original image composition.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;"Beauty is really in the eye of the beholder"&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;That's all for the theory, we will move to code in next session, &lt;a href="http://amitkushwaha.co.in/understanding-cnn-part-2.html"&gt;Understanding CNN - Part 2&lt;/a&gt;.&lt;/p&gt;</content></entry><entry><title>Image Aesthetic Assessment</title><link href="https://yardstick17.github.io/image-aesthetic-assessment.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/image-aesthetic-assessment.html</id><summary type="html">&lt;p&gt;Image Aesthetic Assessment using Deep Learning. The defined network takes the complete image instead of fixed or re-sized input. This makes the network to learn about original image composition.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;"Beauty is really in the eye of the beholder"&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Image aesthetics assessment is an attempt to define the &lt;strong&gt;beauty&lt;/strong&gt; of an Image.
 While everyone has different tastes, there are universally accepted norms when it comes to beauty – things which everyone pretty much agrees are beautiful, like sunsets or sunrises over the mountains or the ocean.&lt;/p&gt;
-&lt;p&gt;Some of the visual feature that come handy are &lt;/p&gt;
+&lt;p&gt;Some of the visual features that come handy are &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;edge distributions, &lt;/li&gt;
 &lt;li&gt;color histogram, &lt;/li&gt;
-&lt;li&gt;Some photographic rules like rue of thirds also determines the beauty of an image.&lt;/li&gt;
+&lt;li&gt;Some photographic rules like rule of thirds also determines the beauty of an image.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Defining image quality with visual features like other manually curated features are limited in the scope.&lt;/p&gt;
 &lt;p&gt;The two photographer's story.&lt;/p&gt;
@@ -166,9 +166,9 @@ While everyone has different tastes, there are universally accepted norms when i
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;The Image is of same place taken with different lightening, angle, adjusted contrast. And it is obvious that image on the left has better aesthetic attire.&lt;/p&gt;
+&lt;p&gt;The Image is of the same place taken with different lightning, angle, adjusted contrast. And it is obvious that image on the left has better aesthetic attire.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Significance of Image Aesthetics&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;For a platform especially that serves media content, one of the crucial aspect is to show high quality content. With social sites and the given ‘selfie’ trend, we are generating huge amount of data in the form of either images or videos.
+&lt;p&gt;For a platform especially that serves media content, one of the crucial aspects is to show high-quality content. With social sites and the given ‘selfie’ trend, we are generating a huge amount of data in the form of either images or videos.
  Having a track on the quality will always be helpful.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -186,10 +186,10 @@ While everyone has different tastes, there are universally accepted norms when i
 &lt;/table&gt;
 &lt;h2&gt;&lt;strong&gt;Can we model such Human Perception?&lt;/strong&gt;&lt;/h2&gt;
 &lt;h2&gt;&lt;strong&gt;Deep learning&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;The topic needs no introduction. It’s a revolution especially in the image classification domain since the last 5 years. With “Alexnet” winning the Image-Net competition, improving error rate with a huge margin acted as spark in the field. Since then, CNN has many state of the arts on its name.&lt;/p&gt;
+&lt;p&gt;The topic needs no introduction. It’s a revolution especially in the image classification domain since the last 5 years. With “Alexnet” winning the Image-Net competition, improving error rate with a huge margin acted as a spark in the field. Since then, CNN has many state of the arts on its name.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Network architecture of Alexnet.&lt;/strong&gt; &lt;/p&gt;
 &lt;p&gt;&lt;img alt="Alexnet architecture" src="./../images/thumb_CNN_image_1024.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;The first layer is input, where input in fed to the network. We can see there pooling operations, convolution operations finally followed by a fully connected layer 
+&lt;p&gt;The first layer is input, where input is fed to the network. We can see their pooling operations, convolution operations finally followed by a fully connected layer 
 and final softmax layer so that we get values as the probability for each class we label.&lt;/p&gt;
 &lt;h2&gt;&lt;strong&gt;Fixed size input constraint&lt;/strong&gt;&lt;/h2&gt;
 &lt;table&gt;
@@ -207,7 +207,7 @@ and final softmax layer so that we get values as the probability for each class 
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;We always resize the input feature vector. If the image is larger, image is cropped 
-or pad image if image dimensions are smaller, to get a fixed size input to fed the network&lt;/p&gt;
+or pad image if image dimensions are smaller, to get a fixed size input to feed the network&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -224,34 +224,34 @@ or pad image if image dimensions are smaller, to get a fixed size input to fed t
 &lt;/table&gt;
 &lt;p&gt;The above two images are &lt;strong&gt;beautiful in their original aspect ratio.&lt;/strong&gt; 
 What happens if we re-size the image to a fixed size of 224 * 224? 
-Certainly the image will &lt;strong&gt;loose all it’s original aesthetic value!&lt;/strong&gt; 
-From Landscape to Squared size. All damage is done. The original image composition is lost when image is re-sized.&lt;/p&gt;
+Certainly, the image will &lt;strong&gt;loose all it’s original aesthetic value!&lt;/strong&gt; 
+From Landscape to Squared size. All damage is done. The original image composition is lost when an image is re-sized.&lt;/p&gt;
 &lt;h2&gt;&lt;strong&gt;Demystifying the Network Architecture&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Network Architecture" src="./../images/thumb_CNN_image_1024.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;Let’s unveil the hidden layers! So, we can see that after the input , there are few layers of &lt;strong&gt;Operations&lt;/strong&gt;. 
+&lt;p&gt;Let’s unveil the hidden layers! So, we can see that after the input, there are few layers of &lt;strong&gt;Operations&lt;/strong&gt;. 
 The operations are either &lt;strong&gt;Max-pooling&lt;/strong&gt; or convolving with a filter i.e. &lt;strong&gt;Convolution&lt;/strong&gt;.
-So why fixed size of input is required at all then?&lt;br&gt;
+So why the fixed size of input is required at all then?&lt;br&gt;
 It’s because of the &lt;strong&gt;Fully Connected Layer&lt;/strong&gt; just before the outputs. 
-Fully Connected Layers are in the network for non-linear combination of feature extracted before in convolution network.&lt;/p&gt;
+Fully Connected Layers are in the network for the non-linear combination of feature extracted before in convolution network.&lt;/p&gt;
 &lt;p&gt;Let's understand bit by bit.&lt;/p&gt;
 &lt;h2&gt;&lt;strong&gt;Max Pooling&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Max pooling are there for &lt;strong&gt;Down-sampling&lt;/strong&gt; the feature space while maintain the spatial information
+&lt;p&gt;Max pooling are there for &lt;strong&gt;Down-sampling&lt;/strong&gt; the feature space while maintaining the spatial information
 Max Pooling in action&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Max Pooling" src="./../images/cropped_max_pooling.gif"&gt;&lt;/p&gt;
 &lt;h2&gt;&lt;strong&gt;Spatial Pyramid Pooling&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;In spp, an image is divided into bins. Each bin is pooled in its turn. As the number of bins are fixed, 
+&lt;p&gt;In spp, an image is divided into bins. Each bin is pooled in its turn. As the number of bins is fixed, 
 we always get the &lt;strong&gt;Fixed Shape Output&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Spp operation in action&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Spatial Pyramid Pooling" src="./../images/sppp_2_cropped.gif"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Spatial Pyramid Pooling" src="./../images/bin_4_spp.gif"&gt;&lt;/p&gt;
 &lt;h2&gt;&lt;strong&gt;Spp Network Architecture&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Spp Network Architecture" src="./../images/network.png"&gt;&lt;/p&gt;
-&lt;p&gt;The first network is the traditional CNN , we can see the &lt;strong&gt;Max-pool layer&lt;/strong&gt; just before the fully connected layer.
+&lt;p&gt;The first network is the traditional CNN, we can see the &lt;strong&gt;Max-pool layer&lt;/strong&gt; just before the fully connected layer.
 In the second architecture, the last max pooling layer is &lt;strong&gt;replaced by a Spp layer&lt;/strong&gt;. 
 With the &lt;strong&gt;Fixed Bin size (1,2,4)&lt;/strong&gt; we make sure that the fully connected layer gets the fixed shape input.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Spp Network Architecture" src="./../images/687474703a2f2f692e696d6775722e636f6d2f5351574a566f442e706e67.png"&gt;&lt;/p&gt;
 &lt;h2&gt;&lt;strong&gt;Training the Spp-Net&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Training the Spp-Net on &lt;strong&gt;live-dataset&lt;/strong&gt;, very small dataset, about 1K images total, model achieved the accuracy of 75% on training data, 83% on the test data.&lt;/p&gt;
+&lt;p&gt;Training the Spp-Net on &lt;strong&gt;live-dataset&lt;/strong&gt;, very small dataset, about 1K images total, model achieved the accuracy of 75% on training data, 83% of the test data.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -270,10 +270,10 @@ With the &lt;strong&gt;Fixed Bin size (1,2,4)&lt;/strong&gt; we make sure that t
 &lt;p&gt;&lt;strong&gt;With Spp in Network&lt;/strong&gt;  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Model learns the scale invariant feature like SIFT(traditional image processing algorithm).&lt;/li&gt;
-&lt;li&gt;One of the challenge in text classification with Deep learning is the fixed size feature vector representation of sentence.&lt;/li&gt;
+&lt;li&gt;One of the challenges in text classification with Deep learning is the fixed size feature vector representation of the sentence.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;&lt;strong&gt;Interesting Results&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;After training model, I experimented for few results. These are the most interesting and promising results I found.&lt;/p&gt;
+&lt;p&gt;After training model, I experimented with few results. These are the most interesting and promising results I found.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -288,7 +288,7 @@ With the &lt;strong&gt;Fixed Bin size (1,2,4)&lt;/strong&gt; we make sure that t
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;I recently came across this &lt;a href="https://philliphaumesserphotography.com"&gt;Photographer&lt;/a&gt; experience from being a amateur to professional.&lt;br&gt;
+&lt;p&gt;I recently came across this &lt;a href="https://philliphaumesserphotography.com"&gt;Photographer&lt;/a&gt; experience from being an amateur to professional.&lt;br&gt;
 He proved what difference a change in perspective can make. So, I decided to make my trained model judge for his efficacy.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -311,7 +311,7 @@ He proved what difference a change in perspective can make. So, I decided to mak
 &lt;li&gt;&lt;a href="https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"&gt;Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton, ImageNet Classification with Deep Convolutional Neural Networks 2012&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://ieeexplore.ieee.org/document/7780429/"&gt;Long Mai, Hailin Jin, Feing Liu, Composition-Preserving Deep Photo Aesthetics Assessment&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;With that I would like to wrap up. Any Questions ?&lt;/p&gt;</content><category term="image quality prediction"></category><category term="spatial pyramid pooling"></category><category term="spp-net"></category><category term="deep learning"></category></entry><entry><title>Image Classification</title><link href="https://yardstick17.github.io/image-classification.html" rel="alternate"></link><published>2017-03-01T00:00:00+05:30</published><updated>2017-03-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-03-01:/image-classification.html</id><summary type="html">&lt;p&gt;A Deep learning approach to classify image into four categories - Food, Ambiance, Menu and Human.&lt;/p&gt;</summary><content type="html">&lt;p&gt;A Deep learning approach to classify image into four categories - Food, Ambiance, Menu and Human.&lt;/p&gt;</content></entry><entry><title>Image Similarity</title><link href="https://yardstick17.github.io/image-similarity.html" rel="alternate"></link><published>2017-03-01T00:00:00+05:30</published><updated>2017-03-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-03-01:/image-similarity.html</id><summary type="html">&lt;p&gt;A Deep learning approach to identify a probable image plagiarism.&lt;/p&gt;</summary><content type="html">&lt;p&gt;A Deep learning approach to identify a probable image plagiarism.&lt;/p&gt;</content></entry><entry><title>Optimizers in Deep Learning</title><link href="https://yardstick17.github.io/optimizers-in-deep-learning.html" rel="alternate"></link><published>2017-03-01T00:00:00+05:30</published><updated>2017-03-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-03-01:/optimizers-in-deep-learning.html</id><summary type="html">&lt;p&gt;The fundamental of any Machine learning models is defining a cost function or loss function. Optimizing over data-set i.e. minimizing our
+&lt;p&gt;With that, I would like to wrap up. Any Questions?&lt;/p&gt;</content><category term="image quality prediction"></category><category term="spatial pyramid pooling"></category><category term="spp-net"></category><category term="deep learning"></category></entry><entry><title>Image Classification</title><link href="https://yardstick17.github.io/image-classification.html" rel="alternate"></link><published>2017-03-01T00:00:00+05:30</published><updated>2017-03-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-03-01:/image-classification.html</id><summary type="html">&lt;p&gt;A Deep learning approach to classify image into four categories - Food, Ambiance, Menu and Human.&lt;/p&gt;</summary><content type="html">&lt;p&gt;A Deep learning approach to classify image into four categories - Food, Ambiance, Menu and Human.&lt;/p&gt;</content></entry><entry><title>Image Similarity</title><link href="https://yardstick17.github.io/image-similarity.html" rel="alternate"></link><published>2017-03-01T00:00:00+05:30</published><updated>2017-03-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-03-01:/image-similarity.html</id><summary type="html">&lt;p&gt;A Deep learning approach to identify a probable image plagiarism.&lt;/p&gt;</summary><content type="html">&lt;p&gt;A Deep learning approach to identify a probable image plagiarism.&lt;/p&gt;</content></entry><entry><title>Optimizers in Deep Learning</title><link href="https://yardstick17.github.io/optimizers-in-deep-learning.html" rel="alternate"></link><published>2017-03-01T00:00:00+05:30</published><updated>2017-03-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-03-01:/optimizers-in-deep-learning.html</id><summary type="html">&lt;p&gt;The fundamental of any Machine learning models is defining a cost function or loss function. Optimizing over data-set i.e. minimizing our
 cost function or loss enables us to learn the model. The technique of efficiently minimizing our cost function is done using the
 well defined algorithms under the premise …&lt;/p&gt;</summary><content type="html">&lt;p&gt;The fundamental of any Machine learning models is defining a cost function or loss function. Optimizing over data-set i.e. minimizing our
 cost function or loss enables us to learn the model. The technique of efficiently minimizing our cost function is done using the
