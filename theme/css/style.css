@@ -1,15 +1,10 @@
 html {
-  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
   /*font-family: 'Open Sans', 'helvetica', sans-serif;*/
-  /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
-  /*font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;*/
-
-
-
-
+  /*font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif; */
+  	font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
 
   background: #FFFFFF;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* Titles */

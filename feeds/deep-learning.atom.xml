@@ -193,20 +193,9 @@ While everyone has different tastes, there are universally accepted norms when i
 &lt;p&gt;The first layer is input, where input is fed to the network. We can see their pooling operations, convolution operations finally followed by a fully connected layer 
 and final softmax layer so that we get values as the probability for each class we label.&lt;/p&gt;
 &lt;h2&gt;&lt;strong&gt;Fixed size input constraint&lt;/strong&gt;&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Input Layer&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;img alt="Input Layer" src="./../images/thumb_input_CNN_image_1024.jpg"&gt;&lt;/td&gt;
-&lt;td&gt;Input image &lt;strong&gt;re-sized to 224 * 224&lt;/strong&gt; irrespective of original image shape.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;Input Layer   |&lt;br&gt;
+  ------------- | -------------
+  &lt;img alt="Input Layer" src="./../images/thumb_input_CNN_image_1024.jpg"&gt; | Input image &lt;strong&gt;re-sized to 224 * 224&lt;/strong&gt; irrespective of original image shape.&lt;/p&gt;
 &lt;p&gt;We always resize the input feature vector. If the image is larger, image is cropped 
 or pad image if image dimensions are smaller, to get a fixed size input to feed the network&lt;/p&gt;
 &lt;table&gt;
