@@ -93,7 +93,7 @@ all these three. But let's focus on Integer and Float only.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;This means once a string objects is created, it cannot be changed which makes them &lt;code&gt;immutable&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This means once a string objects is created, it cannot be changed which makes them &lt;code&gt;immutable&lt;/code&gt; data type.&lt;/p&gt;
 &lt;h3&gt;&lt;strong&gt;LIST&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;A list is a ordered sequence of items. The items can be of any data types.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;hello world&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -124,7 +124,7 @@ parenthesis around comma separated items.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Tuple is also an &lt;code&gt;immutable&lt;/code&gt; data-types.&lt;/p&gt;
+&lt;p&gt;Tuple is also an &lt;code&gt;immutable&lt;/code&gt; data-type.&lt;/p&gt;
 &lt;h3&gt;&lt;strong&gt;SET&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;A set is an unordered collection of unique items.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
