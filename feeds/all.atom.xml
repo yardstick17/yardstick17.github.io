@@ -25,8 +25,8 @@ are instances of these classes.&lt;/p&gt;
 &lt;li&gt;set: {2, 4}&lt;/li&gt;
 &lt;li&gt;dictionary: {1: 'one', 2: 'two'}&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;INTEGERS, FLOATS&lt;/strong&gt;
-Python interprets the decimal digits without any prefix. For example: &lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;INTEGERS, FLOATS&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Python interprets the decimal digits without any prefix. For example: &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
 &lt;span class="mi"&gt;4&lt;/span&gt;
@@ -61,7 +61,7 @@ Python interprets the decimal digits without any prefix. For example: &lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;strong&gt;STRINGS&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;STRINGS&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Strings are the sequence of unicode characters. These sequence must be enclosed by single quotes, double quotes or triple quotes.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;hello world&amp;#39;&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
@@ -91,8 +91,8 @@ Python interprets the decimal digits without any prefix. For example: &lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;strong&gt;LIST&lt;/strong&gt;
-A list is a ordered sequence of items. The items can be of any data types.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;LIST&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;A list is a ordered sequence of items. The items can be of any data types.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;hello world&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
 &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;hello world&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;1.2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -107,7 +107,7 @@ A list is a ordered sequence of items. The items can be of any data types.&lt;/p
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;strong&gt;TUPLE&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;TUPLE&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;A tuple is a sequence of items like list but with a difference that once created, it cannot be
 changed later. It means value assignment is not allowed, just like strings. It is defined by putting
 parenthesis around comma separated items.&lt;/p&gt;
@@ -121,7 +121,7 @@ parenthesis around comma separated items.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;strong&gt;SET&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;SET&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;A set is an unordered collection of unique items.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
@@ -139,8 +139,8 @@ parenthesis around comma separated items.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;strong&gt;DICTIONARY&lt;/strong&gt;
-A dictionary is an collection of key-values pairs. They are meant to be used for accessing random key data.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;DICTIONARY&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;A dictionary is an collection of key-values pairs. They are meant to be used for accessing random key data.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;one&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;two&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;three&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="s1"&gt;&amp;#39;one&amp;#39;&lt;/span&gt;
@@ -149,7 +149,7 @@ A dictionary is an collection of key-values pairs. They are meant to be used for
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;That's pretty much covers the basic types of data types in python. There are more sepcialized
+&lt;p&gt;This pretty much covers the basic types of data-types in python. There are more specialized
 data types like dates and times, queues, fixed-type arrays etc. Just like the other data types
 they also have some special property which comes very handy while working with real data. We will be soon
 exploring them.&lt;/p&gt;
