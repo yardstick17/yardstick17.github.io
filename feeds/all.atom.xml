@@ -146,7 +146,14 @@ A dictionary is an collection of key-values pairs. They are meant to be used for
 &lt;span class="s1"&gt;&amp;#39;one&amp;#39;&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;span class="s1"&gt;&amp;#39;three&amp;#39;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>Introduction to Data Analytics Course at ReDi School, Berlin</title><link href="https://yardstick17.github.io/introduction-to-data-analytics-course-at-redi-school-berlin.html" rel="alternate"></link><published>2019-01-21T00:00:00+05:30</published><updated>2019-01-21T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2019-01-21:/introduction-to-data-analytics-course-at-redi-school-berlin.html</id><summary type="html">&lt;p&gt;Before starting the course for Data Analytics with Python, following is the Pre-requisite:
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That's pretty much covers the basic types of data types in python. There are more sepcialized
+data types like dates and times, queues, fixed-type arrays etc. Just like the other data types
+they also have some special property which comes very handy while working with real data. We will be soon
+exploring them.&lt;/p&gt;
+&lt;p&gt;Goodbye until then.&lt;/p&gt;</content></entry><entry><title>Introduction to Data Analytics Course at ReDi School, Berlin</title><link href="https://yardstick17.github.io/introduction-to-data-analytics-course-at-redi-school-berlin.html" rel="alternate"></link><published>2019-01-21T00:00:00+05:30</published><updated>2019-01-21T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2019-01-21:/introduction-to-data-analytics-course-at-redi-school-berlin.html</id><summary type="html">&lt;p&gt;Before starting the course for Data Analytics with Python, following is the Pre-requisite:
 - Basic Understanding in Python&lt;/p&gt;
 &lt;p&gt;Goal for the course will be understanding the how basic Python can be used for analytical purposes. For this later in the
 course we will be exploring the &lt;a href="https://www.kaggle.com/c/titanic/data"&gt;Titanic Dataset&lt;/a&gt;.&lt;/p&gt;
