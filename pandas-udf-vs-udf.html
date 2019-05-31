@@ -11,18 +11,19 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content=", Deep Learning, " />
+<meta name="keywords" content="pyarrow, pyspark, pandas_udf, udf, Data Engineering, " />
 
-<meta property="og:title" content="Understanding CNN "/>
-<meta property="og:url" content="https://amitkushwaha.co.in/understanding-cnn.html" />
-<meta property="og:description" content="Let&#39;s start with the most basic element of Neural Network - Perceptron. Perceptron The elementary entity and basic form of neural network which can also learn. The development owes to a biological inspiration from a Neuron. Much like Neuron, a perceptron takes an input signal, process it, and stimulate a response …" />
+<meta property="og:title" content="Pandas UDF vs UDF "/>
+<meta property="og:url" content="https://amitkushwaha.co.in/pandas-udf-vs-udf.html" />
+<meta property="og:description" content="Pandas UDF aka Vectorized UDF and UDF" />
 <meta property="og:site_name" content="Connecting Dots" />
 <meta property="og:article:author" content="Amit Kushwaha" />
-<meta property="og:article:published_time" content="2017-05-01T00:00:00+05:30" />
-<meta name="twitter:title" content="Understanding CNN ">
-<meta name="twitter:description" content="Let&#39;s start with the most basic element of Neural Network - Perceptron. Perceptron The elementary entity and basic form of neural network which can also learn. The development owes to a biological inspiration from a Neuron. Much like Neuron, a perceptron takes an input signal, process it, and stimulate a response …">
+<meta property="og:article:published_time" content="2019-05-31T00:00:00+05:30" />
+<meta property="" content="2019-05-31T00:00:00+05:30" />
+<meta name="twitter:title" content="Pandas UDF vs UDF ">
+<meta name="twitter:description" content="Pandas UDF aka Vectorized UDF and UDF">
 
-        <title>Understanding CNN  · Connecting Dots
+        <title>Pandas UDF vs UDF  · Connecting Dots
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -70,7 +71,7 @@
 <article>
 <div class="row-fluid">
     <header class="page-header span10 offset2">
-    <h1><a href="https://amitkushwaha.co.in/understanding-cnn.html"> Understanding CNN  </a></h1>
+    <h1><a href="https://amitkushwaha.co.in/pandas-udf-vs-udf.html"> Pandas UDF vs UDF  </a></h1>
     </header>
 </div>
 
@@ -78,80 +79,16 @@
         <div class="span8 offset2 article-content">
 
             
-            <p>Let's start with the most basic element of Neural Network - <strong>Perceptron</strong>.</p>
-<h2><strong>Perceptron</strong></h2>
-<p>The elementary entity and basic form of neural network which can also learn. 
-The development owes to a biological inspiration from a Neuron. Much like Neuron, a perceptron 
-takes an input signal, process it, and stimulate a response. A single perceptron can learn to discriminate linear separable problem.</p>
-<p><img alt="Perceptron" src="https://amitkushwaha.co.in/images/TalkCNN.007.jpeg"></p>
-<h2><strong>Representing a Perceptron</strong></h2>
-<p>The more practical representation of Perceptron and its function.</p>
-<p><img alt="Perceptron" src="https://amitkushwaha.co.in/images/TalkCNN.008.jpeg"></p>
-<h2><strong>Feature Vector</strong></h2>
-<p>Machine learning tasks are usually described in terms of how the machine
-learning system should process an example. An example is a collection of features
-that have been quantitatively measured from some object or event that we want
-the machine learning system to process. We typically represent an example as a
-vector x ∈ Rn where each entry xi of the vector is another feature. For example,
-the features of an image are usually the values of the pixels in the image.</p>
-<h2><strong>Classification</strong></h2>
-<p>In this type of task, the computer program is asked to specify
-which of k categories some input belongs to. To solve this task, the learning
-algorithm is usually asked to produce a function f : Rn → {1, . . . , k}. When
-y = f (x), the model assigns an input described by vector x to a category
-identified by numeric code y. There are other variants of the classification
-task, for example, where f outputs a probability distribution over classes.
-An example of a classification task is object recognition, where the input
-is an image (usually described as a set of pixel brightness values), and the
-output is a numeric code identifying the object in the image. For example,
-the Willow Garage PR2 robot is able to act as a waiter that can recognize
-different kinds of drinks and deliver them to people on command (Goodfellow
-et al., 2010). Modern object recognition is best accomplished with
-deep learning (Krizhevsky et al., 2012; Ioffe and Szegedy, 2015). Object
-recognition is the same basic technology that allows computers to recognize
-faces (Taigman et al., 2014), which can be used to automatically tag people
-in photo collections and allow computers to interact more naturally with
-their users.</p>
-<p>In this presentation, we are going to understand how perceptron learns actually.
-To ease the purpose of understanding, we are going to learn this naive pattern.</p>
-<h2><strong>Training Algorithm</strong></h2>
-<p>A machine learning algorithm is an algorithm that is able to learn from data. But
-what do we mean by learning? Mitchell (1997) provides the definition “A computer
-program is said to learn from experience E with respect to some class of tasks T
-and performance measure P , if its performance at tasks in T , as measured by P ,
-improves with experience E.” One can imagine a very wide variety of experiences
-E, tasks T , and performance measures P , and we do not make any attempt in this
-book to provide a formal definition of what may be used for each of these entities.
-Instead, the following sections provide intuitive descriptions and examples of the
-different kinds of tasks, performance measures and experiences that can be used
-to construct machine learning algorithms.</p>
-<p><img alt="Perceptron" src="https://amitkushwaha.co.in/images/TalkCNN.015.jpeg"></p>
-<h2><strong>Training Perceptron</strong></h2>
-<p>Taking aforementioned mathematical genius to our purview. </p>
-<p><img alt="Perceptron" src="https://amitkushwaha.co.in/images/TalkCNN.016.jpeg"></p>
-<h3>Epoch</h3>
-<p>An epoch is defined as a single pass through your entire training set while training a machine 
-learning model. In a single epoch, all training samples are presented to your model 
-once. So the total number of epochs in training a model gives the 
-number of cycles through the entire training datasest.</p>
-<h2><strong>Training Perceptron</strong></h2>
-<p><img alt="weights-update-process-visualization" src="https://amitkushwaha.co.in/images/cnn-weights-update-animation.gif">
-As explained in the Training Algorithm section, we aim to increase the performance at tasks in T.
-In each epoch, we make a feed-forward our perceptron to predict the desired output. When the
-predicted(calculated) is not consistent with the desired, we make an update to the weights of perceptron.
- Updating the weights means, wither the values of W are going to be increased or decreaded.
- This delta change is what <strong><em>Training Algorithm</em></strong> dictates in order to minimize the overall error/loss as defined.</p>
-<p>While we train any model, we always have a loss defined over which the weights are optimized.
-A very typical training loss should appear like this.</p>
-<p><img alt="Training loss Graph" src="https://amitkushwaha.co.in/images/training_loss_e_0.001.png"></p>
-<p>That's all for the theory, we will move to code in next session, <a href="http://amitkushwaha.co.in/understanding-cnn-part-2.html">Understanding CNN - Part 2</a>.</p>
+            
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQGbwTJjYK6d3jpSlue_8e4Pcul0_Y3rMtSGcWK-3elTrrrG-0HJxkb0H0kz4umlphUCJg-_sp6a-CC/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    
             
             <section>
 <div class="accordion" id="accordion2">
     <div class="accordion-group">
         <div class="accordion-heading">
             <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2"
-                href="https://amitkushwaha.co.in/understanding-cnn.html#disqus_thread">
+                href="https://amitkushwaha.co.in/pandas-udf-vs-udf.html#disqus_thread">
                 Comments
             </a>
         </div>
@@ -161,8 +98,8 @@ A very typical training loss should appear like this.</p>
                     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'amitkushwaha';
-        var disqus_identifier = 'https://amitkushwaha.co.in/understanding-cnn.html';
-    var disqus_url = 'https://amitkushwaha.co.in/understanding-cnn.html';
+        var disqus_identifier = 'https://amitkushwaha.co.in/pandas-udf-vs-udf.html';
+    var disqus_url = 'https://amitkushwaha.co.in/pandas-udf-vs-udf.html';
 
     (function() {
          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -185,9 +122,28 @@ A very typical training loss should appear like this.</p>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time pubdate="pubdate" datetime="2017-05-01T00:00:00+05:30">May 1, 2017</time>
+            <time pubdate="pubdate" datetime="2019-05-31T00:00:00+05:30">May 31, 2019</time>
+
+<h4>Last Updated</h4>
+<time datetime="2019-05-31T00:00:00+05:30">May 31, 2019</time>
+
             <h4>Category</h4>
-            <a class="category-link" href="https://amitkushwaha.co.in/categories.html#deep-learning-ref">Deep Learning</a>
+            <a class="category-link" href="https://amitkushwaha.co.in/categories.html#data-engineering-ref">Data Engineering</a>
+            <h4>Tags</h4>
+            <ul class="list-of-tags tags-in-article">
+                <li><a href="https://amitkushwaha.co.in/tags.html#pandas_udf-ref">pandas_udf
+                    <span>1</span>
+</a></li>
+                <li><a href="https://amitkushwaha.co.in/tags.html#pyarrow-ref">pyarrow
+                    <span>1</span>
+</a></li>
+                <li><a href="https://amitkushwaha.co.in/tags.html#pyspark-ref">pyspark
+                    <span>1</span>
+</a></li>
+                <li><a href="https://amitkushwaha.co.in/tags.html#udf-ref">udf
+                    <span>1</span>
+</a></li>
+            </ul>
 <h4>Contact</h4>
     <a href="https://www.linkedin.com/in/yardstick17" title="My linkedin Profile" class="sidebar-social-links" target="_blank">
     <i class="fa fa-linkedin sidebar-social-links"></i></a>
