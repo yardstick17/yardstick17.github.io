@@ -190,7 +190,7 @@ It will allow us to do data analysis, data visualisation, data preparation, and 
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content></entry><entry><title>Understanding CNN (Part 2)</title><link href="https://yardstick17.github.io/understanding-cnn-part-2.html" rel="alternate"></link><published>2017-06-01T00:00:00+05:30</published><updated>2017-06-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-06-01:/understanding-cnn-part-2.html</id><summary type="html">&lt;p&gt;This is the continuation of Part-1 of this series. if you are just started in the subject please review
-the &lt;a href="http://amitkushwaha.co.in/understanding-cnn.html"&gt;Part-1&lt;/a&gt; of this series.&lt;/p&gt;
+the &lt;a href="http://amitk.org/understanding-cnn.html"&gt;Part-1&lt;/a&gt; of this series.&lt;/p&gt;
 &lt;h2&gt;&lt;strong&gt;Training Perceptron&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Perceptron" src="../images/TalkCNN.016.jpeg"&gt;&lt;/p&gt;
 &lt;h3&gt;Dataset&lt;/h3&gt;
@@ -200,7 +200,7 @@ the &lt;a href="http://amitkushwaha.co.in/understanding-cnn.html"&gt;Part-1&lt;/
 
 
 &lt;p&gt;We …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This is the continuation of Part-1 of this series. if you are just started in the subject please review
-the &lt;a href="http://amitkushwaha.co.in/understanding-cnn.html"&gt;Part-1&lt;/a&gt; of this series.&lt;/p&gt;
+the &lt;a href="http://amitk.org/understanding-cnn.html"&gt;Part-1&lt;/a&gt; of this series.&lt;/p&gt;
 &lt;h2&gt;&lt;strong&gt;Training Perceptron&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="Perceptron" src="../images/TalkCNN.016.jpeg"&gt;&lt;/p&gt;
 &lt;h3&gt;Dataset&lt;/h3&gt;
@@ -331,7 +331,7 @@ predicted(calculated) is not consistent with the desired, we make an update to t
 &lt;p&gt;While we train any model, we always have a loss defined over which the weights are optimized.
 A very typical training loss should appear like this.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Training loss Graph" src="../images/training_loss_e_0.001.png"&gt;&lt;/p&gt;
-&lt;p&gt;That's all for the theory, we will move to code in next session, &lt;a href="http://amitkushwaha.co.in/understanding-cnn-part-2.html"&gt;Understanding CNN - Part 2&lt;/a&gt;.&lt;/p&gt;</content></entry><entry><title>Distributed Representations of Words and Phrases and their Composition</title><link href="https://yardstick17.github.io/distributed-representations-of-words-and-phrases-and-their-composition.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/distributed-representations-of-words-and-phrases-and-their-composition.html</id><summary type="html">&lt;p&gt;&lt;a href="http://web2.cs.columbia.edu/~blei/seminar/2016_discrete_data/readings/MikolovSutskeverChenCorradoDean2013.pdf"&gt;Paper Link&lt;/a&gt;
+&lt;p&gt;That's all for the theory, we will move to code in next session, &lt;a href="http://amitk.org/understanding-cnn-part-2.html"&gt;Understanding CNN - Part 2&lt;/a&gt;.&lt;/p&gt;</content></entry><entry><title>Distributed Representations of Words and Phrases and their Composition</title><link href="https://yardstick17.github.io/distributed-representations-of-words-and-phrases-and-their-composition.html" rel="alternate"></link><published>2017-04-01T00:00:00+05:30</published><updated>2017-04-01T00:00:00+05:30</updated><author><name>Amit Kushwaha</name></author><id>tag:yardstick17.github.io,2017-04-01:/distributed-representations-of-words-and-phrases-and-their-composition.html</id><summary type="html">&lt;p&gt;&lt;a href="http://web2.cs.columbia.edu/~blei/seminar/2016_discrete_data/readings/MikolovSutskeverChenCorradoDean2013.pdf"&gt;Paper Link&lt;/a&gt;
 &lt;strong&gt;Authors:&lt;/strong&gt; Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean
 &lt;strong&gt;Aim:&lt;/strong&gt;  &lt;br&gt;
 This Paper is second in the series by Mikolov et al. of &lt;a href="http://www.fit.vutbr.cz/research/groups/speech/publi/2009/mikolov_ic2009_nnlm_4.pdf"&gt;Statistical Language Models Based on Neural Networks&lt;/a&gt;
